@@ -22,6 +22,10 @@ public class ModPotionRecipes {
             builder.registerPotionRecipe(Potions.AWKWARD, Ingredient.of(ModItems.DISENTGILIL), ModPotions.SHATTER_POTION);
             builder.registerPotionRecipe(ModPotions.SHATTER_POTION, Ingredient.of(Items.REDSTONE), ModPotions.LONG_SHATTER_POTION);
             builder.registerPotionRecipe(ModPotions.SHATTER_POTION, Ingredient.of(Items.GLOWSTONE_DUST), ModPotions.STRONG_SHATTER_POTION);
+            //====================================================ОЖОГ==========================================================
+            builder.registerPotionRecipe(Potions.AWKWARD, Ingredient.of(ModItems.CHARRED_STONE), ModPotions.SCORCH_POTION);
+            builder.registerPotionRecipe(ModPotions.SCORCH_POTION, Ingredient.of(Items.REDSTONE), ModPotions.LONG_SCORCH_POTION);
+            builder.registerPotionRecipe(ModPotions.SCORCH_POTION, Ingredient.of(Items.GLOWSTONE_DUST), ModPotions.STRONG_SCORCH_POTION);
 
         });
     }
