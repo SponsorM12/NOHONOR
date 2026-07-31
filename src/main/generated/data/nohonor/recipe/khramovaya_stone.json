@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "khramovaya_stone",
+  "key": {
+    "A": "nohonor:khramovaya_stone",
+    "B": "minecraft:cobblestone"
+  },
+  "pattern": [
+    "ABA",
+    "BAB",
+    "ABA"
+  ],
+  "result": {
+    "id": "nohonor:khramovaya_stone"
+  }
+}

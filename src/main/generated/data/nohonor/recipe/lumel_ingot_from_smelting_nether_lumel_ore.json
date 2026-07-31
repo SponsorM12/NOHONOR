@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "lumel",
+  "ingredient": "nohonor:nether_lumel_ore",
+  "result": {
+    "id": "nohonor:lumel_ingot"
+  }
+}

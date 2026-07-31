@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "nohonor:item/pearl_silver_ingot"
+  }
+}

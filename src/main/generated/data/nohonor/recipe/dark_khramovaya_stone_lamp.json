@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "khramovaya_stone",
+  "key": {
+    "A": "nohonor:dark_polished_khramovaya_stone",
+    "B": "minecraft:glowstone"
+  },
+  "pattern": [
+    " A ",
+    "ABA",
+    " A "
+  ],
+  "result": {
+    "id": "nohonor:dark_khramovaya_stone_lamp"
+  }
+}

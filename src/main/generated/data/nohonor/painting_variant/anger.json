@@ -1,0 +1,13 @@
+{
+  "asset_id": "nohonor:anger",
+  "author": {
+    "color": "gray",
+    "translate": "painting.nohonor.anger.author"
+  },
+  "height": 4,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.nohonor.anger.title"
+  },
+  "width": 3
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "hesperides",
+  "key": {
+    "A": "nohonor:hesperides_planks",
+    "B": "minecraft:stick"
+  },
+  "pattern": [
+    "  A",
+    " B ",
+    "B  "
+  ],
+  "result": {
+    "id": "minecraft:wooden_spear"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "asset_id": "nohonor:first_planet",
+  "author": {
+    "color": "gray",
+    "translate": "painting.nohonor.first_planet.author"
+  },
+  "height": 1,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.nohonor.first_planet.title"
+  },
+  "width": 1
+}

@@ -1,0 +1,13 @@
+{
+  "asset_id": "nohonor:gladiator",
+  "author": {
+    "color": "gray",
+    "translate": "painting.nohonor.gladiator.author"
+  },
+  "height": 1,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.nohonor.gladiator.title"
+  },
+  "width": 1
+}

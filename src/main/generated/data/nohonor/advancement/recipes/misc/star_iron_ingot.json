@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_star_iron_nugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nohonor:star_iron_nugget"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "nohonor:star_iron_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_star_iron_nugget"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "nohonor:star_iron_ingot"
+    ]
+  }
+}

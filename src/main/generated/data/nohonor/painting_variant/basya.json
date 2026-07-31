@@ -1,0 +1,13 @@
+{
+  "asset_id": "nohonor:basya",
+  "author": {
+    "color": "gray",
+    "translate": "painting.nohonor.basya.author"
+  },
+  "height": 4,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.nohonor.basya.title"
+  },
+  "width": 4
+}

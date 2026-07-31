@@ -1,0 +1,6 @@
+{
+  "parent": "nohonor:item/scaled2x",
+  "textures": {
+    "layer0": "nohonor:item/symbol_of_the_universe"
+  }
+}

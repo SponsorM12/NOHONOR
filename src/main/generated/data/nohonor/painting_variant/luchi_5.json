@@ -1,0 +1,13 @@
+{
+  "asset_id": "nohonor:luchi_5",
+  "author": {
+    "color": "gray",
+    "translate": "painting.nohonor.luchi_5.author"
+  },
+  "height": 5,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.nohonor.luchi_5.title"
+  },
+  "width": 5
+}

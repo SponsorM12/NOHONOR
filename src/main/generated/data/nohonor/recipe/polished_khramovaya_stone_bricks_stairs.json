@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "khramovaya_stone",
+  "key": {
+    "#": "nohonor:polished_khramovaya_stone_bricks"
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "nohonor:polished_khramovaya_stone_bricks_stairs"
+  }
+}

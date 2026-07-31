@@ -1,0 +1,8 @@
+{
+  "comparator_output": 13,
+  "description": {
+    "translate": "jukebox_song.nohonor.music_disc_v_moyey_golove"
+  },
+  "length_in_seconds": 164.0,
+  "sound_event": "nohonor:music_disc.v_moyey_golove"
+}

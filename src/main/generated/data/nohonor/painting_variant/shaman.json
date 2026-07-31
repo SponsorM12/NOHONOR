@@ -1,0 +1,13 @@
+{
+  "asset_id": "nohonor:shaman",
+  "author": {
+    "color": "gray",
+    "translate": "painting.nohonor.shaman.author"
+  },
+  "height": 3,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.nohonor.shaman.title"
+  },
+  "width": 5
+}

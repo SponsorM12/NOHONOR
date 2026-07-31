@@ -1,0 +1,22 @@
+{
+  "values": [
+    "nohonor:hesperides_log",
+    "nohonor:hesperides_wood",
+    "nohonor:stripped_hesperides_log",
+    "nohonor:stripped_hesperides_wood",
+    "nohonor:hesperides_planks",
+    "nohonor:hesperides_stairs",
+    "nohonor:hesperides_slab",
+    "nohonor:hesperides_fence",
+    "nohonor:hesperides_fence_gate",
+    "nohonor:hesperides_door",
+    "nohonor:hesperides_trapdoor",
+    "nohonor:hesperides_pressure_plate",
+    "nohonor:hesperides_button",
+    "nohonor:hesperides_shelf",
+    "nohonor:hesperides_sign",
+    "nohonor:hesperides_wall_sign",
+    "nohonor:hesperides_hanging_sign",
+    "nohonor:hesperides_wall_hanging_sign"
+  ]
+}

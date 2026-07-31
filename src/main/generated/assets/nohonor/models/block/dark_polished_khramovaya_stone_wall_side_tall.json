@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side_tall",
+  "textures": {
+    "wall": "nohonor:block/dark_polished_khramovaya_stone"
+  }
+}

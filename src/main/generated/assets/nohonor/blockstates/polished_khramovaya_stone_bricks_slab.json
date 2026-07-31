@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "nohonor:block/polished_khramovaya_stone_bricks_slab"
+    },
+    "type=double": {
+      "model": "nohonor:block/polished_khramovaya_stone_bricks"
+    },
+    "type=top": {
+      "model": "nohonor:block/polished_khramovaya_stone_bricks_slab_top"
+    }
+  }
+}

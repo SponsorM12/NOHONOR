@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "nohonor:rice_shoot",
+    "nohonor:rice_shoot",
+    "nohonor:rice_shoot",
+    "nohonor:rice_shoot",
+    "nohonor:rice_shoot",
+    "nohonor:rice_shoot",
+    "nohonor:rice_shoot",
+    "nohonor:rice_shoot",
+    "nohonor:rice_shoot"
+  ],
+  "result": {
+    "id": "nohonor:rice"
+  }
+}

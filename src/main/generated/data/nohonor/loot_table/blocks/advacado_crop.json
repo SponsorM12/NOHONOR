@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:block",
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    }
+  ],
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "nohonor:advacado_crop",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "age": "7"
+              }
+            }
+          ],
+          "name": "nohonor:advacado"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

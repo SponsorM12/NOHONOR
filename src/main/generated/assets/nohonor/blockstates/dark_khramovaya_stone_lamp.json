@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "nohonor:block/dark_khramovaya_stone_lamp"
+    },
+    "clicked=true": {
+      "model": "nohonor:block/dark_khramovaya_stone_lamp_on"
+    }
+  }
+}

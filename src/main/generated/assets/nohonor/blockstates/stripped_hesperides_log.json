@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "nohonor:block/stripped_hesperides_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "nohonor:block/stripped_hesperides_log"
+    },
+    "axis=z": {
+      "model": "nohonor:block/stripped_hesperides_log",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 0.1,
+  "group": "bismuth",
+  "ingredient": "nohonor:end_stone_bismuth_ore",
+  "result": {
+    "id": "nohonor:bismuth"
+  }
+}

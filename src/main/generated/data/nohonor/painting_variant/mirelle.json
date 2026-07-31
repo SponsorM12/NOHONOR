@@ -1,0 +1,13 @@
+{
+  "asset_id": "nohonor:mirelle",
+  "author": {
+    "color": "gray",
+    "translate": "painting.nohonor.mirelle.author"
+  },
+  "height": 5,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.nohonor.mirelle.title"
+  },
+  "width": 5
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/template_potted_azalea_bush",
+  "textures": {
+    "plant": "nohonor:block/potted_hesperides_sapling_plant",
+    "side": "nohonor:block/potted_hesperides_sapling_side",
+    "top": "nohonor:block/potted_hesperides_sapling_top"
+  }
+}

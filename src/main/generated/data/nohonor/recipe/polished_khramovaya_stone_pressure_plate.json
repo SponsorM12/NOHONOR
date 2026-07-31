@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "khramovaya_stone",
+  "key": {
+    "#": "nohonor:polished_khramovaya_stone"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "nohonor:polished_khramovaya_stone_pressure_plate"
+  }
+}

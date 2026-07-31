@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_shelf_left",
+  "textures": {
+    "all": "nohonor:block/hesperides_shelf",
+    "particle": "nohonor:block/stripped_hesperides_log"
+  }
+}

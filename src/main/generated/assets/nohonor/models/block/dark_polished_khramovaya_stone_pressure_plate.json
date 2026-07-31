@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/pressure_plate_up",
+  "textures": {
+    "texture": "nohonor:block/dark_polished_khramovaya_stone"
+  }
+}

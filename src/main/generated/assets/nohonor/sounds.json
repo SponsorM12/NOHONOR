@@ -1,0 +1,47 @@
+{
+  "music_disc.ame_iro_rondo": {
+    "sounds": [
+      {
+        "name": "nohonor:records/ame_iro_rondo",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.nohonor.music_disc.ame_iro_rondo"
+  },
+  "music_disc.full_confession": {
+    "sounds": [
+      {
+        "name": "nohonor:records/full_confession",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.nohonor.music_disc.full_confession"
+  },
+  "music_disc.lost_my_pieces": {
+    "sounds": [
+      {
+        "name": "nohonor:records/lost_my_pieces",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.nohonor.music_disc.lost_my_pieces"
+  },
+  "music_disc.my_only_chance": {
+    "sounds": [
+      {
+        "name": "nohonor:records/my_only_chance",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.nohonor.music_disc.my_only_chance"
+  },
+  "music_disc.v_moyey_golove": {
+    "sounds": [
+      {
+        "name": "nohonor:records/v_moyey_golove",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.nohonor.music_disc.v_moyey_golove"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "asset_id": "nohonor:rozmari",
+  "author": {
+    "color": "gray",
+    "translate": "painting.nohonor.rozmari.author"
+  },
+  "height": 5,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.nohonor.rozmari.title"
+  },
+  "width": 5
+}

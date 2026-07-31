@@ -1,0 +1,8 @@
+{
+  "comparator_output": 1,
+  "description": {
+    "translate": "jukebox_song.nohonor.music_disc_ame_iro_rondo"
+  },
+  "length_in_seconds": 134.0,
+  "sound_event": "nohonor:music_disc.ame_iro_rondo"
+}

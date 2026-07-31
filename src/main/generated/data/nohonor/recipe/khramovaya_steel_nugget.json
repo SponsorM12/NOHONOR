@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "nohonor:khramovaya_steel_ingot"
+  ],
+  "result": {
+    "count": 9,
+    "id": "nohonor:khramovaya_steel_nugget"
+  }
+}

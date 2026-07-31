@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/tinted_cross",
+  "textures": {
+    "cross": "nohonor:block/makosh_berries_berry_bush_stage1"
+  }
+}

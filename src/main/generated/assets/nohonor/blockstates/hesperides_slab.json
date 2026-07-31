@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "nohonor:block/hesperides_slab"
+    },
+    "type=double": {
+      "model": "nohonor:block/hesperides_planks"
+    },
+    "type=top": {
+      "model": "nohonor:block/hesperides_slab_top"
+    }
+  }
+}

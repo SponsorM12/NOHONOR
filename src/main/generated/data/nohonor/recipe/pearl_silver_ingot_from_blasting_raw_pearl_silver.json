@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 0.6,
+  "group": "pearl_sliver",
+  "ingredient": "nohonor:raw_pearl_silver",
+  "result": {
+    "id": "nohonor:pearl_silver_ingot"
+  }
+}

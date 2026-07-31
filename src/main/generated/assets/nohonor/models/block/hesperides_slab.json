@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "nohonor:block/hesperides_planks",
+    "side": "nohonor:block/hesperides_planks",
+    "top": "nohonor:block/hesperides_planks"
+  }
+}

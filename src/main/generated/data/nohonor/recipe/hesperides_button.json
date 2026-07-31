@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "hesperides",
+  "ingredients": [
+    "nohonor:hesperides_planks"
+  ],
+  "result": {
+    "id": "nohonor:hesperides_button"
+  }
+}

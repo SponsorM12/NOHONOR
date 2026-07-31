@@ -1,0 +1,6 @@
+{
+  "parent": "nohonor:item/wide_frame",
+  "textures": {
+    "layer0": "nohonor:item/blessing"
+  }
+}

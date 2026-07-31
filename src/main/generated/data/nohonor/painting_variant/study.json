@@ -1,0 +1,13 @@
+{
+  "asset_id": "nohonor:study",
+  "author": {
+    "color": "gray",
+    "translate": "painting.nohonor.study.author"
+  },
+  "height": 3,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.nohonor.study.title"
+  },
+  "width": 3
+}

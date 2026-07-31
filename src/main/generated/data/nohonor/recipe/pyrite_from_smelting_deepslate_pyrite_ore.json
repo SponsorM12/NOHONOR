@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 0.3,
+  "group": "pyrite",
+  "ingredient": "nohonor:deepslate_pyrite_ore",
+  "result": {
+    "id": "nohonor:pyrite"
+  }
+}

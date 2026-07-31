@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "nohonor:advacado"
+  ],
+  "result": {
+    "id": "nohonor:advacado_seed"
+  }
+}

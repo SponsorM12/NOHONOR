@@ -1,0 +1,13 @@
+{
+  "asset_id": "nohonor:sybil",
+  "author": {
+    "color": "gray",
+    "translate": "painting.nohonor.sybil.author"
+  },
+  "height": 8,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.nohonor.sybil.title"
+  },
+  "width": 8
+}

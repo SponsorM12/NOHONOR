@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 0.3,
+  "group": "pyrite",
+  "ingredient": "nohonor:pyrite_ore",
+  "result": {
+    "id": "nohonor:pyrite"
+  }
+}

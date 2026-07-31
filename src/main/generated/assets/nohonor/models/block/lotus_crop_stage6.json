@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "nohonor:block/lotus_crop_stage6"
+  }
+}

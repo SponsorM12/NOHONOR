@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "pearl_silver",
+  "key": {
+    "A": "nohonor:pearl_silver_ingot"
+  },
+  "pattern": [
+    "A A",
+    "A A"
+  ],
+  "result": {
+    "id": "nohonor:pearl_silver_boots"
+  }
+}

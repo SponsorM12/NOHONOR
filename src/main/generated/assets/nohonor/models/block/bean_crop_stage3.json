@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "nohonor:block/bean_crop_stage3"
+  }
+}

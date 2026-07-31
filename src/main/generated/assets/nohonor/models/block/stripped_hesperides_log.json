@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "nohonor:block/stripped_hesperides_log_top",
+    "side": "nohonor:block/stripped_hesperides_log"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "asset_id": "nohonor:billy",
+  "author": {
+    "color": "gray",
+    "translate": "painting.nohonor.billy.author"
+  },
+  "height": 5,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.nohonor.billy.title"
+  },
+  "width": 5
+}

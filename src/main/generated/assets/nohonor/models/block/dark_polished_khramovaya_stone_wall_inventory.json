@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "nohonor:block/dark_polished_khramovaya_stone"
+  }
+}

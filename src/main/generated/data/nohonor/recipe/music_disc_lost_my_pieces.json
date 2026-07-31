@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "nohonor:disc_fragment_lost_my_pieces",
+    "nohonor:disc_fragment_lost_my_pieces",
+    "nohonor:disc_fragment_lost_my_pieces",
+    "nohonor:disc_fragment_lost_my_pieces",
+    "nohonor:disc_fragment_lost_my_pieces",
+    "nohonor:disc_fragment_lost_my_pieces",
+    "nohonor:disc_fragment_lost_my_pieces",
+    "nohonor:disc_fragment_lost_my_pieces",
+    "nohonor:disc_fragment_lost_my_pieces"
+  ],
+  "result": {
+    "id": "nohonor:music_disc_lost_my_pieces"
+  }
+}

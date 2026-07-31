@@ -1,0 +1,13 @@
+{
+  "asset_id": "nohonor:mouse",
+  "author": {
+    "color": "gray",
+    "translate": "painting.nohonor.mouse.author"
+  },
+  "height": 3,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.nohonor.mouse.title"
+  },
+  "width": 3
+}

@@ -1,0 +1,13 @@
+{
+  "asset_id": "nohonor:nian",
+  "author": {
+    "color": "gray",
+    "translate": "painting.nohonor.nian.author"
+  },
+  "height": 3,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.nohonor.nian.title"
+  },
+  "width": 2
+}

@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "nohonor:polished_khramovaya_stone_bricks",
+  "result": {
+    "id": "nohonor:cut_khramovaya_stone"
+  }
+}

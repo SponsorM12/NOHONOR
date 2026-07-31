@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cast_bulat_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nohonor:cast_bulat_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "nohonor:cast_bulat_nugget"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cast_bulat_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "nohonor:cast_bulat_nugget"
+    ]
+  }
+}

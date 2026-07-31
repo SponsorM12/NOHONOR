@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_nether_shcherbarune_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nohonor:nether_shcherbarune_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "nohonor:shcherbarune_from_blasting_nether_shcherbarune_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_nether_shcherbarune_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "nohonor:shcherbarune_from_blasting_nether_shcherbarune_ore"
+    ]
+  }
+}

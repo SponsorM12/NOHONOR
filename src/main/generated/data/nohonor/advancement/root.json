@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "nohonor:/gui/advancements/backgrounds/main",
+    "description": {
+      "translate": "advancement.nohonor.root.description"
+    },
+    "icon": {
+      "id": "nohonor:blessing"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.nohonor.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "tick"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

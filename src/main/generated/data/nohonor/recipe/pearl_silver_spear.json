@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "pearl_silver",
+  "key": {
+    "A": "nohonor:pearl_silver_ingot",
+    "B": "minecraft:stick"
+  },
+  "pattern": [
+    "  A",
+    " B ",
+    "B  "
+  ],
+  "result": {
+    "id": "nohonor:pearl_silver_spear"
+  }
+}

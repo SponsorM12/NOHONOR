@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "nohonor:item/pearl_silver_hoe"
+  }
+}

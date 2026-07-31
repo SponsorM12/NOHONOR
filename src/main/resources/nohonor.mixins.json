@@ -1,0 +1,37 @@
+{
+	"required": true,
+	"package": "zver.nohonor.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"ExampleMixin",
+
+		"vanilla_mechanics.vault.VaultStateMixin",
+		"vanilla_mechanics.vault.VaultServerDataMixin",
+		"vanilla_mechanics.vault.VaultBlockEntityMixin",
+		"vanilla_mechanics.vault.VaultBlockServerMixin",
+
+		"tenacity.LivingEntityTenacityMixin",
+		"tenacity.PlayerTenacityMixin",
+
+		"armor.silver_pearl.LivingEntityPearlSilverArmorMixin",
+
+		"effect.LivingEntityImmunityMixin",
+		"effect.LivingEntityCurseMixin",
+		"effect.PlayerNoFlyGlideMixin",
+		"effect.PlayerDisarmMixin",
+		"effect.ServerPlayerGameModeDisarmMixin",
+		"effect.MobDisarmMixin",
+		"effect.LivingEntityNosferatuMixin",
+		"effect.LivingEntityNoReviveMixin",
+
+		"damage_type.LivingEntityPureDamageMixin",
+
+		"elytra.CustomElytraMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

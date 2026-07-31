@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:block",
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    }
+  ],
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "nohonor:yellow_arkady_crop",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "age": "7"
+              }
+            }
+          ],
+          "name": "nohonor:yellow_arkady_thorn"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

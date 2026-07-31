@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "nohonor:block/polished_khramovaya_stone_bricks",
+    "side": "nohonor:block/polished_khramovaya_stone_bricks",
+    "top": "nohonor:block/polished_khramovaya_stone_bricks"
+  }
+}

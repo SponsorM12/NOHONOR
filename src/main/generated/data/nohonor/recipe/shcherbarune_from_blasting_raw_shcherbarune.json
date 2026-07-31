@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 0.25,
+  "group": "shcherbarune",
+  "ingredient": "nohonor:raw_shcherbarune",
+  "result": {
+    "id": "nohonor:shcherbarune"
+  }
+}

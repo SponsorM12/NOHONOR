@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_koldovskaya_brass_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nohonor:koldovskaya_brass_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "nohonor:koldovskaya_brass_nugget"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_koldovskaya_brass_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "nohonor:koldovskaya_brass_nugget"
+    ]
+  }
+}

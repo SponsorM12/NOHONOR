@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "hesperides",
+  "key": {
+    "#": "nohonor:hesperides_planks"
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "nohonor:hesperides_slab"
+  }
+}

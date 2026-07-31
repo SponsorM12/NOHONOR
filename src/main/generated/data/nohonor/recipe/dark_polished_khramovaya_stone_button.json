@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "khramovaya_stone",
+  "ingredients": [
+    "nohonor:dark_polished_khramovaya_stone"
+  ],
+  "result": {
+    "id": "nohonor:dark_polished_khramovaya_stone_button"
+  }
+}

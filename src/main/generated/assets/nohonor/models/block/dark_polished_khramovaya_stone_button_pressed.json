@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "nohonor:block/dark_polished_khramovaya_stone"
+  }
+}

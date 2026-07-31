@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "hesperides",
+  "key": {
+    "#": "nohonor:hesperides_planks"
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "id": "nohonor:hesperides_trapdoor"
+  }
+}

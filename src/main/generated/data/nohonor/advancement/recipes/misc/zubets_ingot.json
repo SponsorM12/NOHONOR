@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "nohonor:zubets_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zubets_nugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nohonor:zubets_nugget"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_zubets_nugget"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "nohonor:zubets_ingot"
+    ]
+  }
+}

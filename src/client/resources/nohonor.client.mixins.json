@@ -1,0 +1,19 @@
+{
+	"required": true,
+	"package": "zver.nohonor.client.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"ExampleClientMixin",
+
+		"effect.MinecraftDisarmMixin",
+
+		"title_screen.TitleScreenLayoutMixin",
+		"title_screen.TitleScreenRenderMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

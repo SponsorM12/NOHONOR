@@ -1,0 +1,8 @@
+{
+  "comparator_output": 13,
+  "description": {
+    "translate": "jukebox_song.nohonor.music_disc_lost_my_pieces"
+  },
+  "length_in_seconds": 121.0,
+  "sound_event": "nohonor:music_disc.lost_my_pieces"
+}

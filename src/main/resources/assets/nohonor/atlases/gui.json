@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "type": "minecraft:single",
+      "resource": "nohonor:hud/tenacity_full",
+      "sprite": "nohonor:hud/tenacity_full"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "nohonor:hud/tenacity_half",
+      "sprite": "nohonor:hud/tenacity_half"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "nohonor:hud/tenacity_empty",
+      "sprite": "nohonor:hud/tenacity_empty"
+    }
+  ]
+}

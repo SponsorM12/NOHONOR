@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "nohonor:hellesteroy_ingot"
+  ],
+  "result": {
+    "count": 9,
+    "id": "nohonor:hellesteroy_nugget"
+  }
+}

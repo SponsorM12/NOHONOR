@@ -1,0 +1,13 @@
+{
+  "asset_id": "nohonor:chernobog",
+  "author": {
+    "color": "gray",
+    "translate": "painting.nohonor.chernobog.author"
+  },
+  "height": 5,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.nohonor.chernobog.title"
+  },
+  "width": 5
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "hesperides",
+  "key": {
+    "#": "minecraft:stick",
+    "W": "nohonor:hesperides_planks"
+  },
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "result": {
+    "id": "nohonor:hesperides_fence_gate"
+  }
+}

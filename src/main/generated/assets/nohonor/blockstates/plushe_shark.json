@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "nohonor:block/plushe_shark",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "nohonor:block/plushe_shark"
+    },
+    "facing=south": {
+      "model": "nohonor:block/plushe_shark",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "nohonor:block/plushe_shark",
+      "y": 270
+    }
+  }
+}

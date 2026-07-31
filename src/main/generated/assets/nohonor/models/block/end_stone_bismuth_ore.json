@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "nohonor:block/end_stone_bismuth_ore"
+  }
+}

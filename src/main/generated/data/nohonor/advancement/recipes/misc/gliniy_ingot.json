@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_gliniy_nugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nohonor:gliniy_nugget"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "nohonor:gliniy_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_gliniy_nugget"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "nohonor:gliniy_ingot"
+    ]
+  }
+}

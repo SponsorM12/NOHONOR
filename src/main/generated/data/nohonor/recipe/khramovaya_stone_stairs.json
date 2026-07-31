@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "khramovaya_stone",
+  "key": {
+    "#": "nohonor:khramovaya_stone"
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "nohonor:khramovaya_stone_stairs"
+  }
+}

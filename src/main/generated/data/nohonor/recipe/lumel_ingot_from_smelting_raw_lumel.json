@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 0.25,
+  "group": "lumel",
+  "ingredient": "nohonor:raw_lumel",
+  "result": {
+    "id": "nohonor:lumel_ingot"
+  }
+}

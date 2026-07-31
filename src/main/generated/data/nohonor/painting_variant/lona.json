@@ -1,0 +1,13 @@
+{
+  "asset_id": "nohonor:lona",
+  "author": {
+    "color": "gray",
+    "translate": "painting.nohonor.lona.author"
+  },
+  "height": 5,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.nohonor.lona.title"
+  },
+  "width": 5
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_advacado": {
+      "conditions": {
+        "items": [
+          {
+            "items": "nohonor:advacado"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "nohonor:advacado_seed"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_advacado"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "nohonor:advacado_seed"
+    ]
+  }
+}

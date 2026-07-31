@@ -1,0 +1,34 @@
+{
+  "layers": {
+    "horse_body": [
+      {
+        "texture": "nohonor:pearl_silver"
+      }
+    ],
+    "humanoid": [
+      {
+        "texture": "nohonor:pearl_silver"
+      }
+    ],
+    "humanoid_baby": [
+      {
+        "texture": "nohonor:pearl_silver"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "nohonor:pearl_silver"
+      }
+    ],
+    "nautilus_body": [
+      {
+        "texture": "nohonor:pearl_silver"
+      }
+    ],
+    "wolf_body": [
+      {
+        "texture": "nohonor:pearl_silver"
+      }
+    ]
+  }
+}
