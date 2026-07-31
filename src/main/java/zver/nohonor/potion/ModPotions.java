@@ -5,13 +5,115 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.alchemy.Potion;
 import zver.nohonor.NOHONOR;
 import zver.nohonor.effect.ModEffects;
 
 public class ModPotions {
+//ПОТКИ
+//================================ВАНИЛЬНЫЕ ЗЕЛЬЯ+ АБСУРДНЫЕ ЗЕЛЬЯ=======================================
+//=================================================УДАЧА 5==============================================
+    public static final Holder<Potion> LONG_LUCK_POTION = registerPotion("long_luck",
+            new Potion("long_luck", new MobEffectInstance(ModEffects.LUCK,
+                    12000,
+                    0,
+                    true,
+                    true
+            )));
 
-//=================================================ИССУШЕНИЕ============================================
+    public static final Holder<Potion> STRONG_LUCK_POTION = registerPotion("strong_luck",
+            new Potion("strong_luck", new MobEffectInstance(ModEffects.LUCK,
+                    3000,
+                    1,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> ABSURD_LUCK_POTION = registerPotion("absurd_luck",
+            new Potion("absurd_luck", new MobEffectInstance(MobEffects.LUCK,
+                    1200,
+                    4,
+                    true,
+                    true
+            )));
+
+//================================================СИЛА 5==============================================
+    public static final Holder<Potion> ABSURD_STRENGTH_POTION = registerPotion("absurd_strength",
+            new Potion("absurd_strength", new MobEffectInstance(MobEffects.STRENGTH,
+                    200,
+                    4,
+                    true,
+                    true
+            )));
+//===========================================ПОГЛОЩЕНИЕ 5============================================
+    public static final Holder<Potion> ABSORPTION_POTION = registerPotion("absorption",
+            new Potion("absorption", new MobEffectInstance(ModEffects.ABSORPTION,
+                    6000,
+                    0,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> LONG_ABSORPTION_POTION = registerPotion("long_absorption",
+            new Potion("long_absorption", new MobEffectInstance(ModEffects.ABSORPTION,
+                    12000,
+                    0,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> STRONG_ABSORPTION_POTION = registerPotion("strong_absorption",
+            new Potion("strong_absorption", new MobEffectInstance(ModEffects.ABSORPTION,
+                    3000,
+                    1,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> ABSURD_ABSORPTION_POTION = registerPotion("absurd_absorption",
+            new Potion("absurd_absorption", new MobEffectInstance(MobEffects.ABSORPTION,
+                    1200,
+                    4,
+                    true,
+                    true
+            )));
+
+//==============================================ТЬМА==============================================
+    public static final Holder<Potion> DARKNESS_POTION = registerPotion("darkness",
+            new Potion("darkness", new MobEffectInstance(ModEffects.DARKNESS,
+                    200,
+                    0,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> LONG_DARKNESS_POTION = registerPotion("long_darkness",
+            new Potion("long_darkness", new MobEffectInstance(ModEffects.DARKNESS,
+                    400,
+                    0,
+                    true,
+                    true
+            )));
+
+//==============================================ДИЛЬФИН 5==============================================
+    public static final Holder<Potion> DOLPHINS_GRACE_POTION = registerPotion("dolphins_grace",
+            new Potion("dolphins_grace", new MobEffectInstance(ModEffects.DOLPHINS_GRACE,
+                    2400,
+                    0,
+                    true,
+                 true
+            )));
+
+    public static final Holder<Potion> LONG_DOLPHINS_GRACE_POTION = registerPotion("long_dolphins_grace",
+            new Potion("long_dolphins_grace", new MobEffectInstance(ModEffects.DOLPHINS_GRACE,
+                    4800,
+                    0,
+                    true,
+                    true
+            )));
+
+//=============================================ИССУШЕНИЕ=============================================
     public static final Holder<Potion> WITHERING_POTION = registerPotion("withering",
             new Potion("withering", new MobEffectInstance(ModEffects.WITHER,
                     200,
@@ -36,6 +138,7 @@ public class ModPotions {
                     true
             )));
 
+//================================================КАСТОМ========================================================
 //================================================РАСКОЛ=======================================================
     public static final Holder<Potion> SHATTER_POTION = registerPotion("shatter",
             new Potion("shatter", new MobEffectInstance(ModEffects.SHATTER,

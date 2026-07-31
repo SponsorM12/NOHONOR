@@ -11,6 +11,14 @@ public class ModPotionRecipes {
 
     public static void initialize() {
         FabricPotionBrewingBuilder.BUILD.register(builder -> {
+            //=================================================ДАКРНЕС ТЬМА=====================================================
+            builder.registerPotionRecipe(Potions.AWKWARD, Ingredient.of(Items.ECHO_SHARD), ModPotions.DARKNESS_POTION);
+            builder.registerPotionRecipe(ModPotions.DARKNESS_POTION, Ingredient.of(Items.REDSTONE), ModPotions.LONG_DARKNESS_POTION);
+
+            //==================================================ДЕЛЬФИН=====================================================
+            builder.registerPotionRecipe(Potions.AWKWARD, Ingredient.of(ModItems.SEA_STONE), ModPotions.DOLPHINS_GRACE_POTION);
+            builder.registerPotionRecipe(ModPotions.DOLPHINS_GRACE_POTION, Ingredient.of(Items.REDSTONE), ModPotions.LONG_DOLPHINS_GRACE_POTION);
+
             //=================================================ВИТХЕР ВИЗЕР=====================================================
             builder.registerPotionRecipe(Potions.AWKWARD, Ingredient.of(ModItems.BLACK_BONE), ModPotions.WITHERING_POTION);
             builder.registerPotionRecipe(ModPotions.WITHERING_POTION, Ingredient.of(Items.REDSTONE), ModPotions.LONG_WITHERING_POTION);
