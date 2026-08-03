@@ -145,6 +145,16 @@ public class ModItems {
     public static final Item PEARL_TITAN = registerItem(
             "pearl_titan", Item::new, new Item.Properties());
 
+    public static final Item FIVELEAF_CLOVER = registerItem(
+            "fiveleaf_clover",properties -> new ModTooltipItems("item.nohonor.fiveleaf_clover.desc", 1, YELLOWGREEN, properties),
+            new Item.Properties()
+    );
+
+    public static final Item GOLDEN_FIVELEAF_CLOVER = registerItem(
+            "golden_fiveleaf_clover",properties -> new ModTooltipItems("item.nohonor.golden_fiveleaf_clover.desc", 1, GOLD, properties),
+            new Item.Properties()
+    );
+
 //=========================================МЕТАЛЛ + МАТЕРИАЛЫ==========================================
 
     public static final Item RAW_CAST_IRON = registerItem(

@@ -199,6 +199,8 @@ public class ModModelProvider extends FabricModelProvider {
 //============================================ВАЛЮТА===================================================
         itemModelGenerators.generateFlatItem(ModItems.PEARL_GARANT, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.PEARL_TITAN, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.FIVELEAF_CLOVER, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.GOLDEN_FIVELEAF_CLOVER, ModelTemplates.FLAT_ITEM);
 
 //=========================================МЕТАЛЛЫ + МАТЕРИАЛЫ=================================
         itemModelGenerators.generateFlatItem(ModItems.RAW_CAST_IRON, ModelTemplates.FLAT_ITEM);

@@ -23,6 +23,7 @@
 		"effect.MobDisarmMixin",
 		"effect.LivingEntityNosferatuMixin",
 		"effect.LivingEntityNoReviveMixin",
+		"effect.FragilityKineticMixin",
 
 		"damage_type.LivingEntityPureDamageMixin",
 

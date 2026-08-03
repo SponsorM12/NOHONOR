@@ -46,7 +46,9 @@ public class ModPotions {
                     true,
                     true
             )));
-//===========================================ПОГЛОЩЕНИЕ 5============================================
+
+
+//===============================================ПОГЛОЩЕНИЕ 5==========================================
     public static final Holder<Potion> ABSORPTION_POTION = registerPotion("absorption",
             new Potion("absorption", new MobEffectInstance(ModEffects.ABSORPTION,
                     6000,
@@ -109,6 +111,39 @@ public class ModPotions {
             new Potion("long_dolphins_grace", new MobEffectInstance(ModEffects.DOLPHINS_GRACE,
                     4800,
                     0,
+                    true,
+                    true
+            )));
+
+//=========================================ХЕАЛТХ БУСТ ЗДОРОВЬЯ==========================================
+    public static final Holder<Potion> HEALTH_BOOST_POTION = registerPotion("health_boost",
+            new Potion("health_boost", new MobEffectInstance(ModEffects.HEALTH_BOOST,
+                    6000,
+                    0,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> LONG_HEALTH_BOOST_POTION = registerPotion("long_health_boost",
+            new Potion("long_health_boost", new MobEffectInstance(ModEffects.HEALTH_BOOST,
+                    12000,
+                    0,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> STRONG_HEALTH_BOOST_POTION = registerPotion("strong_health_boost",
+            new Potion("strong_health_boost", new MobEffectInstance(ModEffects.HEALTH_BOOST,
+                    3000,
+                    1,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> ABSURD_HEALTH_BOOST_POTION = registerPotion("absurd_health_boost",
+            new Potion("absurd_health_boost", new MobEffectInstance(MobEffects.HEALTH_BOOST,
+                    1200,
+                    4,
                     true,
                     true
             )));
@@ -190,7 +225,6 @@ public class ModPotions {
             )));
 
 //=============================================ТЕНАСИТИ СТОЙКОСТЬ============================================
-
     public static final Holder<Potion> TENACITY_INSTANT_POTION = registerPotion("tenacity_burst",
             new Potion("tenacity_burst", new MobEffectInstance(ModEffects.TENACITY_BURST,
                     1,
@@ -273,7 +307,6 @@ public class ModPotions {
             )));
 
 //=================================================ИМУНИТЕТ======================================================
-
     public static final Holder<Potion> IMMUNITY_POTION = registerPotion("immunity",
             new Potion("immunity", new MobEffectInstance(ModEffects.IMMUNITY,
                     400,
@@ -291,7 +324,6 @@ public class ModPotions {
             )));
 
 //=================================================КУРС ПРОКЛЯТИЕ======================================================
-
     public static final Holder<Potion> CURSE_POTION = registerPotion("curse",
             new Potion("curse", new MobEffectInstance(ModEffects.CURSE,
                     400,
@@ -309,7 +341,6 @@ public class ModPotions {
             )));
 
 //=============================================НЕЛЕТНАЯ ПОГОДА===========================================================
-
     public static final Holder<Potion> NO_FLY_WEATHER_POTION = registerPotion("no_fly_weather",
             new Potion("no_fly_weather", new MobEffectInstance(ModEffects.NO_FLY_WEATHER,
                     1200,
@@ -385,6 +416,83 @@ public class ModPotions {
                     true
             )));
 
+//============================================ГИГАНТ===================================================
+    public static final Holder<Potion> GIANT_POTION = registerPotion("giant",
+            new Potion("giant", new MobEffectInstance(ModEffects.GIANT,
+                    12000,
+                    0,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> LONG_GIANT_POTION = registerPotion("long_giant",
+            new Potion("long_giant", new MobEffectInstance(ModEffects.GIANT,
+                    24000,
+                    0,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> STRONG_GIANT_POTION = registerPotion("strong_giant",
+            new Potion("strong_giant", new MobEffectInstance(ModEffects.GIANT,
+                    6000,
+                    1,
+                    true,
+                    true
+            )));
+
+//==========================================ДЮЙМОВОЧКА===================================================
+    public static final Holder<Potion> THUMBELINA_POTION = registerPotion("thumbelina",
+            new Potion("thumbelina", new MobEffectInstance(ModEffects.THUMBELINA,
+                    12000,
+                    0,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> LONG_THUMBELINA_POTION = registerPotion("long_thumbelina",
+            new Potion("long_thumbelina", new MobEffectInstance(ModEffects.THUMBELINA,
+                    24000,
+                    0,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> STRONG_THUMBELINA_POTION = registerPotion("strong_thumbelina",
+            new Potion("strong_thumbelina", new MobEffectInstance(ModEffects.THUMBELINA,
+                    6000,
+                    1,
+                    true,
+                    true
+            )));
+
+//=============================================ХРУПКОСТЬ=================================================
+    public static final Holder<Potion> FRAGILITY_POTION = registerPotion("fragility",
+            new Potion("fragility", new MobEffectInstance(ModEffects.FRAGILITY,
+                    600,
+                    0,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> LONG_FRAGILITY_POTION = registerPotion("long_fragility",
+            new Potion("long_fragility", new MobEffectInstance(ModEffects.FRAGILITY,
+                    1200,
+                    0,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> STRONG_FRAGILITY_POTION = registerPotion("strong_fragility",
+            new Potion("strong_fragility", new MobEffectInstance(ModEffects.FRAGILITY,
+                    300,
+                    1,
+                    true,
+                    true
+            )));
+
+//============================================================================================================
+//===========================================ИНИЦИАЛИЗАЦИЯ РЕГИСТРАЦИЯ========================================
     private static Holder<Potion> registerPotion(String name, Potion potion) {
         return Registry.registerForHolder(BuiltInRegistries.POTION, Identifier.fromNamespaceAndPath(NOHONOR.MOD_ID, name), potion);
     };

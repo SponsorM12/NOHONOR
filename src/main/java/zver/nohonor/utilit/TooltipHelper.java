@@ -7,6 +7,7 @@ public class TooltipHelper {
 //ХЕЛПЕР
 //====================================ЦВЕТОВЫЕ ПРЕСЕТЫ========================================
     public static final int GOLD = 0xFFD700; //Золотой
+    public static final int YELLOWGREEN = 0xA3E330; //Зелёный
     public static final int LAVENDER = 0xFFE6F4; //Жемчужно-серебряный
     public static final int MEDIUM_PURPLE = 0x9783DF; //Фиолетовый
     public static final int EDWARD = 0x929593; //Зеленоватый но серый

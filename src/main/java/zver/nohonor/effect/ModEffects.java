@@ -12,6 +12,9 @@ import zver.nohonor.effect.custom.*;
 
 public class ModEffects extends MobEffects {
 
+    public static final Holder<MobEffect> HANAHAKI = registerMobEffect("hanahaki",
+            new HanahakiEffect(MobEffectCategory.NEUTRAL, 0xFFD700)); //GOLD
+
     public static final Holder<MobEffect> SHATTER = registerMobEffect("shatter",
             new ShatterEffect(MobEffectCategory.HARMFUL, 0x526088)); //Kashmir Blue
 
@@ -47,6 +50,15 @@ public class ModEffects extends MobEffects {
 
     public static final Holder<MobEffect> NO_REVIVE = registerMobEffect("no_revive",
             new NoReviveEffect(MobEffectCategory.HARMFUL, 0x1A1A1A));//Nero
+
+    public static final Holder<MobEffect> GIANT = registerMobEffect("giant",
+            new GiantEffect(MobEffectCategory.BENEFICIAL, 0x805525));//Hot Curry
+
+    public static final Holder<MobEffect> THUMBELINA = registerMobEffect("thumbelina",
+            new ThumbelinaEffect(MobEffectCategory.BENEFICIAL, 0xBB4269));//Royal Heath
+
+    public static final Holder<MobEffect> FRAGILITY = registerMobEffect("fragility",
+            new FragilityEffect(MobEffectCategory.HARMFUL, 0xB6B9C0));//Echo Blue
 
     private static Holder<MobEffect> registerMobEffect(String name, MobEffect effect) {
         return Registry.registerForHolder(BuiltInRegistries.MOB_EFFECT, Identifier.fromNamespaceAndPath(NOHONOR.MOD_ID, name), effect);

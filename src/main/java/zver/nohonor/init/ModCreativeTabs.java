@@ -51,6 +51,8 @@ public class ModCreativeTabs {
                 //============ВАЛЮТА====================
                 output.accept(ModItems.PEARL_GARANT);
                 output.accept(ModItems.PEARL_TITAN);
+                output.accept(ModItems.FIVELEAF_CLOVER);
+                output.accept(ModItems.GOLDEN_FIVELEAF_CLOVER);
 
                 //============МЕТАЛЛЫ + МАТЕРИАЛЫ============
                 output.accept(ModItems.RAW_CAST_IRON);
