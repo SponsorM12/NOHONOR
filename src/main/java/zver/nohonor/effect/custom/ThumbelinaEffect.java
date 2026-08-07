@@ -16,13 +16,13 @@ public class ThumbelinaEffect extends MobEffect {
                 -0.25D, AttributeModifier.Operation.ADD_MULTIPLIED_BASE);
         this.addAttributeModifier(Attributes.MAX_HEALTH,
                 Identifier.fromNamespaceAndPath(NOHONOR.MOD_ID, "thumbelina_health"),
-                -0.25D, AttributeModifier.Operation.ADD_MULTIPLIED_BASE);
+                -0.1D, AttributeModifier.Operation.ADD_MULTIPLIED_BASE);
         this.addAttributeModifier(Attributes.ENTITY_INTERACTION_RANGE,
                 Identifier.fromNamespaceAndPath(NOHONOR.MOD_ID, "thumbelina_entity_range"),
-                -0.25D, AttributeModifier.Operation.ADD_MULTIPLIED_BASE);
+                -0.125D, AttributeModifier.Operation.ADD_MULTIPLIED_BASE);
         this.addAttributeModifier(Attributes.BLOCK_INTERACTION_RANGE,
                 Identifier.fromNamespaceAndPath(NOHONOR.MOD_ID, "thumbelina_block_range"),
-                -0.25D, AttributeModifier.Operation.ADD_MULTIPLIED_BASE);
+                -0.125D, AttributeModifier.Operation.ADD_MULTIPLIED_BASE);
         //ADD_MULTIPLIED_TOTAL - это процент %
         //ADD_MULTIPLIED_BASE - это тупое +-
 
