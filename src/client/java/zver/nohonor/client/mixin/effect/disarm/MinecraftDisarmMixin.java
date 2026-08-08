@@ -1,4 +1,4 @@
-package zver.nohonor.client.mixin.effect;
+package zver.nohonor.client.mixin.effect.disarm;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;

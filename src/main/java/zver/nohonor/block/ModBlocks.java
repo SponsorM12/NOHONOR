@@ -38,7 +38,7 @@ public class ModBlocks {
 
     public static ResourceKey<Block> getRK(Block block) {
         return BuiltInRegistries.BLOCK.getResourceKey(block).get();
-    };
+    }
 
 //========================================ДЕКОРАТИВНЫЕ БЛОКИ============================================
 //МЕГАХАРОШ
@@ -63,6 +63,17 @@ public class ModBlocks {
 
     public static final Block PLUSHE_SHARK = register(
             "plushe_shark",
+            properties -> new PlushBlocks(properties),
+            BlockBehaviour.Properties.of()
+                    .sound(SoundType.WOOL)
+                    .noOcclusion()
+                    .pushReaction(PushReaction.DESTROY)
+                    .strength(0.1f, 5.0f),
+            true
+    );
+
+    public static final Block PLUSHE_WHALE = register(
+            "plushe_whale",
             properties -> new PlushBlocks(properties),
             BlockBehaviour.Properties.of()
                     .sound(SoundType.WOOL)

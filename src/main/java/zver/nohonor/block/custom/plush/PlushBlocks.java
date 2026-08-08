@@ -2,11 +2,8 @@ package zver.nohonor.block.custom.plush;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -19,17 +16,16 @@ import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
-import zver.nohonor.sound.ModSounds;
 
 public class PlushBlocks extends Block {
     //Свойство направления - север юг запад тд
     public static final EnumProperty<Direction> FACING = BlockStateProperties.HORIZONTAL_FACING;
 
     //Стандартный хитбокс, при направлении севере
-    public static final VoxelShape SHAPE_Z = Block.box(4, 0, 0, 12, 8, 16);
+    public static final VoxelShape SHAPE_Z = Block.box(4, 0, 0.1, 12, 8, 15.9);
 
     //Повернутый хитбокс, на запад-восток инвертированы размеры
-    public static final VoxelShape SHAPE_X = Block.box(0, 0, 4, 16, 8, 12);
+    public static final VoxelShape SHAPE_X = Block.box(0.1, 0, 4, 15.9, 8, 12);
 
     //Устанавливаем состояние по умолчанию
     //объяснить

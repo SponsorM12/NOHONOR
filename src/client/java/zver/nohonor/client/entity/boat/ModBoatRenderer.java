@@ -1,4 +1,4 @@
-package zver.nohonor.client;
+package zver.nohonor.client.entity.boat;
 
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.ModelLayerRegistry;
@@ -9,7 +9,7 @@ import net.minecraft.resources.Identifier;
 import zver.nohonor.NOHONOR;
 import zver.nohonor.entity.boat.ModBoats;
 
-public class ModBoatRenderers {
+public class ModBoatRenderer {
 
     public static final ModelLayerLocation HESPERIDES_BOAT_LAYER =
             new ModelLayerLocation(Identifier.fromNamespaceAndPath(NOHONOR.MOD_ID, "boat/hesperides"), "main");

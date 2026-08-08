@@ -14,20 +14,21 @@
 		"tenacity.PlayerTenacityMixin",
 
 		"armor.silver_pearl.LivingEntityPearlSilverArmorMixin",
-
-		"effect.LivingEntityImmunityMixin",
-		"effect.LivingEntityCurseMixin",
-		"effect.PlayerNoFlyGlideMixin",
-		"effect.PlayerDisarmMixin",
-		"effect.ServerPlayerGameModeDisarmMixin",
-		"effect.MobDisarmMixin",
-		"effect.LivingEntityNosferatuMixin",
-		"effect.LivingEntityNoReviveMixin",
-		"effect.FragilityKineticMixin",
+		"effect.immunity.LivingEntityImmunityMixin",
+		"effect.curse.LivingEntityCurseMixin",
+		"effect.no_fly.PlayerNoFlyGlideMixin",
+		"effect.disarm.PlayerDisarmMixin",
+		"effect.disarm.ServerPlayerGameModeDisarmMixin",
+		"effect.disarm.MobDisarmMixin",
+		"effect.nosferatu.LivingEntityNosferatuMixin",
+		"effect.no_revive.LivingEntityNoReviveMixin",
+		"effect.fragility.FragilityKineticMixin",
 
 		"damage_type.LivingEntityPureDamageMixin",
 
-		"elytra.CustomElytraMixin"
+		"elytra.CustomElytraMixin",
+
+		"hanahaki.PlayerHanahakiMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

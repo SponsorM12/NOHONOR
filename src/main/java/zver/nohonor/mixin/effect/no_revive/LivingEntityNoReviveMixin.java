@@ -1,4 +1,4 @@
-package zver.nohonor.mixin.effect;
+package zver.nohonor.mixin.effect.no_revive;
 
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.LivingEntity;

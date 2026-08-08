@@ -6,7 +6,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import zver.nohonor.block.ModBlocks;
 import zver.nohonor.block.ModWoodTypes;
+import zver.nohonor.custom_mechanics.hanahaki.HanahakiVariants;
 import zver.nohonor.effect.ModEffects;
+import zver.nohonor.entity.ModEntityTypes;
 import zver.nohonor.entity.boat.ModBoats;
 import zver.nohonor.fluid.ModFluids;
 import zver.nohonor.init.*;
@@ -40,23 +42,30 @@ public class NOHONOR implements ModInitializer {
         // Действуйте с осторожностью.
 
 		//ТУТ ВАЖНО НЕ ОБОСРАТЬСЯ С ПОРЯДКОМ ЗАГРУЗКИ
+		ModBlocks.initialize();
+		ModItems.initialize();
+		ModFluids.initialize();
+
 		ModParticles.initialize();
 		ModWoodTypes.initialize();
 		ModSounds.initialize();
-		ModEffects.Initialize();
 
-		ModBoats.initialize();
-
-		ModBlocks.initialize();
-		ModItems.initialize();
-		ModPotions.initialize();
-		ModFluids.initialize();
 		ModLootTableModifiers.initialize();
+
 		ModCreativeTabs.initialize();
 		ModFuels.initialize();
+		ModPotions.initialize();
 		ModPotionRecipes.initialize();
 		ModCompostables.initialize();
 		ModStats.initialize();
+
+		ModEntityTypes.registerModEntityTypes();
+		ModEntityTypes.registerAttributes();
+		ModBoats.initialize();
+
+		ModEffects.Initialize();
+
+		HanahakiVariants.initialize();
 
 		//Класс попадает в onInitialize() явным вызовом,
 		// если у него есть либо: 1. собственные static-поля с регистрацией,

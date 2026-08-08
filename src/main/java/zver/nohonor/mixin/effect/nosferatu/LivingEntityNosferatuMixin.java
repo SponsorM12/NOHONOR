@@ -1,4 +1,4 @@
-package zver.nohonor.mixin.effect;
+package zver.nohonor.mixin.effect.nosferatu;
 
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.damagesource.DamageSource;
@@ -14,8 +14,8 @@ import zver.nohonor.effect.ModEffects;
 @Mixin(LivingEntity.class)
 public abstract class LivingEntityNosferatuMixin {
     //Вампиризм
-    @Shadow public abstract float getHealth();
-    @Shadow public abstract float getAbsorptionAmount();
+    @Shadow public abstract float getHealth(); //never used
+    @Shadow public abstract float getAbsorptionAmount();//never used
 
     @Inject(method = "actuallyHurt", at = @At("HEAD"))
     private void nohonor$applyNosferatuLifesteal(ServerLevel level, DamageSource source, float dmg, CallbackInfo ci) {

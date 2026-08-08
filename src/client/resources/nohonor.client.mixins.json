@@ -5,10 +5,15 @@
 	"client": [
 		"ExampleClientMixin",
 
-		"effect.MinecraftDisarmMixin",
+		"effect.disarm.MinecraftDisarmMixin",
 
 		"title_screen.TitleScreenLayoutMixin",
-		"title_screen.TitleScreenRenderMixin"
+		"title_screen.TitleScreenRenderMixin",
+
+		"hanahaki.AvatarRendererLayerMixin",
+		"hanahaki.AvatarRendererMixin",
+		"hanahaki.AvatarRenderStateMixin",
+		"hanahaki.LivingEntityRendererAccessor"
 	],
 	"injectors": {
 		"defaultRequire": 1

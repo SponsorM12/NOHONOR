@@ -1,4 +1,4 @@
-package zver.nohonor.mixin.effect;
+package zver.nohonor.mixin.effect.fragility;
 
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.damagesource.DamageSource;

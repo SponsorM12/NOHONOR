@@ -42,6 +42,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         //blockModelGenerators.createNonTemplateModelBlock(ModBlocks.PLUSHE_SHARK);
         blockModelGenerators.createNonTemplateHorizontalBlock(ModBlocks.PLUSHE_SHARK);
+        blockModelGenerators.createNonTemplateHorizontalBlock(ModBlocks.PLUSHE_WHALE);
 
         //ХРАМОВЫЕ
         blockModelGenerators.createTrivialCube(ModBlocks.CHISELED_POLISHED_KHRAMOVAYA_STONE);
@@ -393,4 +394,5 @@ public class ModModelProvider extends FabricModelProvider {
     public String getName() {
         return "NOHONOR Mod Models Provider";
     }
+
 }

@@ -10,7 +10,6 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import zver.nohonor.block.ModBlocks;
-import zver.nohonor.entity.boat.ModBoats;
 import zver.nohonor.item.ModItems;
 
 public class ModCreativeTabs {
@@ -173,6 +172,7 @@ public class ModCreativeTabs {
 
                 //==================ДЕКОРАТИВНЫЕ=================
                 output.accept(ModBlocks.PLUSHE_SHARK.asItem());
+                output.accept(ModBlocks.PLUSHE_WHALE.asItem());
 
                 //=================ХРАМОВАЯ
                 output.accept(ModBlocks.KHRAMOVAYA_STONE.asItem());

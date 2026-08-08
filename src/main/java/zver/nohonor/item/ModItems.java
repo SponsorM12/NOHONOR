@@ -896,6 +896,12 @@ public class ModItems {
             new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)
 );
 
+//============================================ЯЙЦА ПРИЗЫВА================================================
+    //public static final Item MINI_GOLEM_SPAWN_EGG = registerItem(
+     //       SpawnEggItem::new,
+    //        new Item.Properties().spawnEgg(ModEntityTypes.GNOME)
+    //);
+
     public static <T extends Item> T registerItem(String name, Function<Item.Properties, T> itemFactory, Item.Properties settings) {
         // Create the item key.
         //           |
@@ -917,6 +923,7 @@ public class ModItems {
 
         return item;
     }
+
 
     public static void initialize() {
         NOHONOR.LOGGER.info("Registering Mod Items for " + NOHONOR.MOD_ID);

@@ -1,4 +1,4 @@
-package zver.nohonor.mixin.effect;
+package zver.nohonor.mixin.effect.disarm;
 
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;

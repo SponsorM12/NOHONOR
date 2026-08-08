@@ -192,6 +192,7 @@
   "block.nohonor.ledlamp": "Led Lamp",
 
   "block.nohonor.plushe_shark": "Plushie Shark",
+  "block.nohonor.plushe_whale": "Plushie Whale",
 
   "block.nohonor.khramovaya_stone": "Khramovaya Stone",
   "block.nohonor.khramovaya_stone_stairs": "Khramovaya Stone Stairs",
@@ -618,6 +619,8 @@
   "painting.nohonor.sybil.author": "Zver",
 
   "stat.nohonor.tenacity_restored": "Tenacity Restored",
+
+  "entity.nohonor.gnome": "Gnome",
 
   "advancement.nohonor.root.title": "§cNO HONOR",
   "advancement.nohonor.root.description": "§7Start playing the NO HONOR!!!\n§8I DID IT!!! I DID IT!!!! AHAHAHAÆHÆÆ-",
