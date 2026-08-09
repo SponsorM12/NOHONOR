@@ -18,11 +18,18 @@ public class HanahakiModel extends PlayerModel {
         MeshDefinition mesh = PlayerModel.createMesh(CubeDeformation.NONE, false);
         PartDefinition root = mesh.getRoot().clearRecursively();
         PartDefinition head = root.getChild("head");
+        //Два слоя на одном child'е — тот же паттерн, что у ванильного head+hat:
+        //внутренний слой (inflate 0.6) + внешний оверлей (inflate 0.7), обе части
+        //рисуются одним CubeListBuilder'ом, цепочкой texOffs()+addBox()
         head.addOrReplaceChild(HANAHAKI, CubeListBuilder.create()
                         .texOffs(0, 0)
-                        .addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(+0.7F)),
+                        .addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.6F))
+                        .texOffs(32, 0)
+                        .addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.7F)),
                 PartPose.ZERO);
-        return LayerDefinition.create(mesh, 64, 64);
+        //Текстура буквально как у слоя головы и шляпы с оригинальныйх текстур игрока
+        return LayerDefinition.create(mesh, 64, 16);
+
     }
 
 }

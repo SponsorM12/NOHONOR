@@ -38,7 +38,7 @@ public class GnomeEntity extends PathfinderMob {
         return PathfinderMob.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 5)
                 .add(Attributes.TEMPT_RANGE, 10)
-                .add(Attributes.MOVEMENT_SPEED, 0.3);
+                .add(Attributes.MOVEMENT_SPEED, 0.4);
     }
 
     private static final EntityDataAccessor<Boolean> DANCING = SynchedEntityData.defineId(GnomeEntity.class, EntityDataSerializers.BOOLEAN);

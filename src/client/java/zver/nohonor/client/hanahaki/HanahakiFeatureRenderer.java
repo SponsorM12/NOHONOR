@@ -21,7 +21,7 @@ public class HanahakiFeatureRenderer extends RenderLayer<AvatarRenderState, Play
 
         HanahakiModel baseModel = new HanahakiModel(context.bakeLayer(HanahakiModelLayers.BASE));
         Identifier baseTexture = Identifier.fromNamespaceAndPath(NOHONOR.MOD_ID, "textures/entity/hanahaki/base.png");
-        HanahakiRenderVariants.register("base", baseModel, RenderTypes.entitySolid(baseTexture));
+        HanahakiRenderVariants.register("base", baseModel, RenderTypes.entityCutout(baseTexture));
         //сюда варианты
     }
 

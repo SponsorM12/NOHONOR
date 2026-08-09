@@ -15,14 +15,19 @@ import zver.nohonor.client.entity.EntityRenderState;
 
 public class GnomeEntityModel extends EntityModel<EntityRenderState> {
     private final ModelPart head;
+    private final ModelPart leftArm;
+    private final ModelPart rightArm;
     private final ModelPart leftLeg;
     private final ModelPart rightLeg;
     private final KeyframeAnimation dancing;
+
 
     public GnomeEntityModel(ModelPart root) {
         super(root);
         // Привязываем переменные к узлам модели
         this.head = root.getChild(PartNames.HEAD);
+        this.leftArm = this.head.getChild(PartNames.LEFT_ARM);   // именно через head, не root
+        this.rightArm = this.head.getChild(PartNames.RIGHT_ARM);
         this.leftLeg = root.getChild(PartNames.LEFT_LEG);
         this.rightLeg = root.getChild(PartNames.RIGHT_LEG);
         this.dancing = GnomeAnimations.DANCING.bake(root);
@@ -91,13 +96,14 @@ public class GnomeEntityModel extends EntityModel<EntityRenderState> {
         if (state.dancingAnimationState.isStarted()) {
             this.dancing.apply(state.dancingAnimationState, state.ageInTicks);
         } else {
-            // Вращаем HEAD (в нашем случае это всё тело), заставляя Гнома смотреть на игрока всем корпусом
-            this.head.xRot = state.xRot * Mth.RAD_TO_DEG;
-            this.head.yRot = state.yRot * Mth.RAD_TO_DEG;
+            this.head.xRot = state.xRot * Mth.DEG_TO_RAD;
+            this.head.yRot = state.yRot * Mth.DEG_TO_RAD;
 
             float limbSwingAmplitude = state.walkAnimationSpeed;
             float limbSwingAnimationProgress = state.walkAnimationPos;
 
+            this.leftArm.xRot = Mth.cos(limbSwingAnimationProgress * 0.2f) * 1.0f * limbSwingAmplitude;
+            this.rightArm.xRot = Mth.cos(limbSwingAnimationProgress * 0.2f + Mth.PI) * 1.0f * limbSwingAmplitude;
             this.leftLeg.xRot = Mth.cos(limbSwingAnimationProgress * 0.2f + Mth.PI) * 1.4f * limbSwingAmplitude;
             this.rightLeg.xRot = Mth.cos(limbSwingAnimationProgress * 0.2f) * 1.4f * limbSwingAmplitude;
         }

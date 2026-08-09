@@ -18,6 +18,18 @@ public class GnomeAnimations {
                     new Keyframe(0.8f, KeyframeAnimations.degreeVec(0, 0, -45), AnimationChannel.Interpolations.LINEAR),
                     new Keyframe(1, KeyframeAnimations.degreeVec(0, 0, 0), AnimationChannel.Interpolations.LINEAR)
             ))
+            .addAnimation(PartNames.LEFT_ARM, new AnimationChannel(
+                    AnimationChannel.Targets.ROTATION,
+                    new Keyframe(0, KeyframeAnimations.degreeVec(0, 0, 0), AnimationChannel.Interpolations.LINEAR),
+                    new Keyframe(0.2f, KeyframeAnimations.degreeVec(0, 0, 45), AnimationChannel.Interpolations.LINEAR),
+                    new Keyframe(0.4f, KeyframeAnimations.degreeVec(0, 0, 0), AnimationChannel.Interpolations.LINEAR)
+            ))
+            .addAnimation(PartNames.RIGHT_ARM, new AnimationChannel(
+                    AnimationChannel.Targets.ROTATION,
+                    new Keyframe(0.5f, KeyframeAnimations.degreeVec(0, 0, 0), AnimationChannel.Interpolations.LINEAR),
+                    new Keyframe(0.7f, KeyframeAnimations.degreeVec(0, 0, -45), AnimationChannel.Interpolations.LINEAR),
+                    new Keyframe(0.9f, KeyframeAnimations.degreeVec(0, 0, 0), AnimationChannel.Interpolations.LINEAR)
+            ))
             .addAnimation(PartNames.LEFT_LEG, new AnimationChannel(
                     AnimationChannel.Targets.ROTATION,
                     new Keyframe(0, KeyframeAnimations.degreeVec(0, 0, 0), AnimationChannel.Interpolations.LINEAR),
