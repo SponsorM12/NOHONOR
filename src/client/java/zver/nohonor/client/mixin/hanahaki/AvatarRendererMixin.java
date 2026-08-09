@@ -10,21 +10,19 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import zver.nohonor.client.hanahaki.HanahakiRenderStateAccessor;
 import zver.nohonor.custom_mechanics.hanahaki.HanahakiData;
-import zver.nohonor.effect.ModEffects;
 
 @Mixin(AvatarRenderer.class)
 public abstract class AvatarRendererMixin {
-    //Переносим synced-данные из живой сущности в render state — именно здесь,
-    //а не в самом слое рендера, потому что submit() слоя работает уже без доступа к сущности.
-    //Параметр типизирован как Avatar (не AvatarlikeEntity) — это erasure первого баунда
-    //дженерика в оригинальном методе, так и матчится мискином.
+    //Больше не проверяем hasEffect() — на клиенте, наблюдающем ЧУЖОГО игрока,
+    //activeEffects не заполнен (эффекты синхронизируются только владельцу и
+    //пассажирам). HANAHAKI_VARIANT — полноценно синхронизированное поле, и
+    //теперь оно само по себе достоверный источник правды: не null <=> эффект
+    //активен, потому что HanahakiEffect и LivingEntityHanahakiMixin
+    //гарантируют его очистку на любом снятии эффекта
     @Inject(method = "extractRenderState", at = @At("TAIL"))
     private void nohonor$extractHanahaki(Avatar entity, AvatarRenderState state, float partialTicks, CallbackInfo ci) {
         HanahakiRenderStateAccessor accessor = (HanahakiRenderStateAccessor) state;
-
-        //Avatar сейчас общий для игрока и ClientMannequin — явная проверка типа,
-        //а не голое приведение, иначе на манекене поймаем ClassCastException
-        if (entity instanceof Player player && player.hasEffect(ModEffects.HANAHAKI)) {
+        if (entity instanceof Player player) {
             accessor.nohonor$setHanahakiVariant(((HanahakiData) player).getHanahakiVariant());
         } else {
             accessor.nohonor$setHanahakiVariant(null);

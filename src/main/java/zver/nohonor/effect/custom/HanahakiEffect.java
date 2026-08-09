@@ -1,8 +1,9 @@
-// zver/nohonor/effect/custom/HanahakiEffect.java
 package zver.nohonor.effect.custom;
 
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import zver.nohonor.custom_mechanics.hanahaki.HanahakiData;
@@ -15,22 +16,30 @@ public class HanahakiEffect extends MobEffect {
         super(category, color);
     }
 
-    //Вызывается и при первом наложении, и при повторном поверх активного — этим и пользуемся,
-    //чтобы перевыбор происходил каждый раз (решили так сознательно)
     @Override
     public void onEffectStarted(LivingEntity mob, int amplifier) {
         super.onEffectStarted(mob, amplifier);
 
-        //onEffectStarted вызывается и на клиенте тоже — если не отфильтровать,
-        //сервер и клиент выберут РАЗНЫЕ варианты независимо друг от друга
         if (mob.level().isClientSide()) {
             return;
         }
 
         if (!(mob instanceof Player player)) {
-            return; //пока только игроки
+            return;
         }
 
-        ((HanahakiData) player).setHanahakiVariant(HanahakiVariants.pickRandom(mob.getRandom()));
+        HanahakiData data = (HanahakiData) player;
+        if (data.getHanahakiVariant() == null) {
+            data.setHanahakiVariant(HanahakiVariants.pickRandom(mob.getRandom()));
+        }
     }
+
+    @Override
+    public void onMobRemoved(ServerLevel level, LivingEntity mob, int amplifier, Entity.RemovalReason reason) {
+        super.onMobRemoved(level, mob, amplifier, reason);
+        if (mob instanceof Player player) {
+            ((HanahakiData) player).setHanahakiVariant(null);
+        }
+    }
+
 }

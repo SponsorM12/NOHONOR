@@ -28,7 +28,8 @@
 
 		"elytra.CustomElytraMixin",
 
-		"hanahaki.PlayerHanahakiMixin"
+		"hanahaki.PlayerHanahakiMixin",
+		"hanahaki.LivingEntityHanahakiMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

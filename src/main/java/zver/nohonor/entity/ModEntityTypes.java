@@ -21,7 +21,7 @@ public class ModEntityTypes {
     public static final EntityType<GnomeEntity> GNOME = register(
             "gnome",
             EntityType.Builder.<GnomeEntity>of(GnomeEntity::new, MobCategory.MISC)
-                    .sized(0.75f, 1.75f)
+                    .sized(0.5f, 0.75f)
     );
 
     private static <T extends Entity> EntityType<T> register(String name, EntityType.Builder<T> builder) {
