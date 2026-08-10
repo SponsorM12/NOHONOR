@@ -60,6 +60,12 @@ public class ModEffects extends MobEffects {
     public static final Holder<MobEffect> FRAGILITY = registerMobEffect("fragility",
             new FragilityEffect(MobEffectCategory.HARMFUL, 0xB6B9C0));//Echo Blue
 
+    public static final Holder<MobEffect> REFLECTION = registerMobEffect("reflection",
+            new ReflectionEffect(MobEffectCategory.BENEFICIAL, 0xEAFFA2));//Australian Mint
+
+     public static final Holder<MobEffect> GREEK_FIRE = registerMobEffect("greek_fire",
+            new GreekFireEffect(MobEffectCategory.HARMFUL, 0xFFFC4F));//Paris Daisy
+
     private static Holder<MobEffect> registerMobEffect(String name, MobEffect effect) {
         return Registry.registerForHolder(BuiltInRegistries.MOB_EFFECT, Identifier.fromNamespaceAndPath(NOHONOR.MOD_ID, name), effect);
     }

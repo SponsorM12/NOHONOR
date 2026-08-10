@@ -10,10 +10,16 @@
 		"title_screen.TitleScreenLayoutMixin",
 		"title_screen.TitleScreenRenderMixin",
 
+		"LivingEntityRendererAccessor",
+
+		"reflection.AvatarRendererReflectionLayerMixin",
+		"reflection.ReflectionAvatarRendererMixin",
+		"reflection.ReflectionRenderStateMixin",
+
 		"hanahaki.AvatarRendererLayerMixin",
 		"hanahaki.AvatarRendererMixin",
-		"hanahaki.AvatarRenderStateMixin",
-		"hanahaki.LivingEntityRendererAccessor"
+		"hanahaki.AvatarRenderStateMixin"
+
 	],
 	"injectors": {
 		"defaultRequire": 1

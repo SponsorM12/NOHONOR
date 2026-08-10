@@ -23,6 +23,9 @@
 		"effect.nosferatu.LivingEntityNosferatuMixin",
 		"effect.no_revive.LivingEntityNoReviveMixin",
 		"effect.fragility.FragilityKineticMixin",
+		"effect.reflection.EntityReflectionDeflectMixin",
+		"effect.greekfire.GreekFireExtinguishMixin",
+		"effect.greekfire.GreekFireDamageMixin",
 
 		"damage_type.LivingEntityPureDamageMixin",
 

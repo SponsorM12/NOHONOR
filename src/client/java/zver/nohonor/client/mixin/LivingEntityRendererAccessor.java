@@ -1,4 +1,4 @@
-package zver.nohonor.client.mixin.hanahaki;
+package zver.nohonor.client.mixin;
 
 import net.minecraft.client.renderer.entity.LivingEntityRenderer;
 import net.minecraft.client.renderer.entity.layers.RenderLayer;

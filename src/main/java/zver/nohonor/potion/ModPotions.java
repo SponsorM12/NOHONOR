@@ -491,6 +491,48 @@ public class ModPotions {
                     true
             )));
 
+//=============================================ОТРАЖЕНИЕ==================================================
+    public static final Holder<Potion> REFLECTION_POTION = registerPotion("reflection",
+            new Potion("reflection", new MobEffectInstance(ModEffects.REFLECTION,
+                    800,
+                    0,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> LONG_REFLECTION_POTION = registerPotion("long_reflection",
+            new Potion("long_reflection", new MobEffectInstance(ModEffects.REFLECTION,
+                    1600,
+                    0,
+                    true,
+                    true
+            )));
+
+//==========================================ГРЕЧЕСКИЙ ОГОНЬ==================================================
+    public static final Holder<Potion> GREEK_FIRE_POTION = registerPotion("greek_fire",
+            new Potion("greek_fire", new MobEffectInstance(ModEffects.GREEK_FIRE,
+                    1000,
+                    0,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> LONG_GREEK_FIRE_POTION = registerPotion("long_greek_fire",
+            new Potion("long_greek_fire", new MobEffectInstance(ModEffects.GREEK_FIRE,
+                    2000,
+                    0,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> STRONG_GREEK_FIRE_POTION = registerPotion("strong_greek_fire",
+            new Potion("strong_greek_fire", new MobEffectInstance(ModEffects.GREEK_FIRE,
+                    500,
+                    1,
+                    true,
+                    true
+            )));
+
 //============================================================================================================
 //===========================================ИНИЦИАЛИЗАЦИЯ РЕГИСТРАЦИЯ========================================
     private static Holder<Potion> registerPotion(String name, Potion potion) {
