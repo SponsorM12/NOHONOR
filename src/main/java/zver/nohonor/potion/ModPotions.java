@@ -81,6 +81,23 @@ public class ModPotions {
                     true
             )));
 
+//========================================СЛЕПОТА==============================================
+    public static final Holder<Potion> BLINDNESS_POTION = registerPotion("blindness",
+            new Potion("blindness", new MobEffectInstance(ModEffects.BLINDNESS,
+                    160,
+                    0,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> LONG_BLINDNESS_POTION = registerPotion("long_blindness",
+            new Potion("long_blindness", new MobEffectInstance(ModEffects.BLINDNESS,
+                    320,
+                    0,
+                    true,
+                    true
+            )));
+
 //==============================================ТЬМА==============================================
     public static final Holder<Potion> DARKNESS_POTION = registerPotion("darkness",
             new Potion("darkness", new MobEffectInstance(ModEffects.DARKNESS,
@@ -143,6 +160,39 @@ public class ModPotions {
     public static final Holder<Potion> ABSURD_HEALTH_BOOST_POTION = registerPotion("absurd_health_boost",
             new Potion("absurd_health_boost", new MobEffectInstance(MobEffects.HEALTH_BOOST,
                     1200,
+                    4,
+                    true,
+                    true
+            )));
+
+    //==============================================ЛЕВИТАЦИЯ============================================
+    public static final Holder<Potion> LEVITATION_POTION = registerPotion("levitation",
+            new Potion("levitation", new MobEffectInstance(ModEffects.LEVITATION,
+                    200,
+                    0,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> LONG_LEVITATION_POTION = registerPotion("long_levitation",
+            new Potion("long_levitation", new MobEffectInstance(ModEffects.LEVITATION,
+                    400,
+                    0,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> STRONG_LEVITATION_POTION = registerPotion("strong_levitation",
+            new Potion("strong_levitation", new MobEffectInstance(ModEffects.LEVITATION,
+                    100,
+                    1,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> ABSURD_LEVITATION_POTION = registerPotion("absurd_levitation",
+            new Potion("absurd_levitation", new MobEffectInstance(MobEffects.LEVITATION,
+                    20,
                     4,
                     true,
                     true
@@ -504,6 +554,22 @@ public class ModPotions {
             new Potion("long_reflection", new MobEffectInstance(ModEffects.REFLECTION,
                     1600,
                     0,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> STRONG_REFLECTION_POTION = registerPotion("strong_reflection",
+            new Potion("strong_reflection", new MobEffectInstance(ModEffects.REFLECTION,
+                    400,
+                    1,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> ABSURD_REFLECTION_POTION = registerPotion("absurd_reflection",
+            new Potion("absurd_reflection", new MobEffectInstance(ModEffects.REFLECTION,
+                    80,
+                    4,
                     true,
                     true
             )));

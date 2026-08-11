@@ -24,6 +24,8 @@
 		"effect.no_revive.LivingEntityNoReviveMixin",
 		"effect.fragility.FragilityKineticMixin",
 		"effect.reflection.EntityReflectionDeflectMixin",
+		"effect.reflection.LivingEntityReflectionMixin",
+		"effect.reflection.PlayerReflectionMixin",
 		"effect.greekfire.GreekFireExtinguishMixin",
 		"effect.greekfire.GreekFireDamageMixin",
 

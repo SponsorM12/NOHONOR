@@ -9,6 +9,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import zver.nohonor.client.reflection.ReflectionRenderStateAccessor;
+import zver.nohonor.custom_mechanics.reflection.ReflectionData;
 import zver.nohonor.effect.ModEffects; // Не забудьте импортировать ваш эффект
 
 @Mixin(AvatarRenderer.class)
@@ -18,8 +19,7 @@ public abstract class ReflectionAvatarRendererMixin {
     private void nohonor$extractReflection(Avatar entity, AvatarRenderState state, float partialTicks, CallbackInfo ci) {
         ReflectionRenderStateAccessor accessor = (ReflectionRenderStateAccessor) state;
         if (entity instanceof Player player) {
-            // Напрямую проверяем наличие эффекта, без кастомной синхронизации
-            accessor.nohonor$setReflecting(player.hasEffect(ModEffects.REFLECTION));
+            accessor.nohonor$setReflecting(((ReflectionData) player).isReflecting());
         } else {
             accessor.nohonor$setReflecting(false);
         }

@@ -190,6 +190,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.declareCustomModelItem(ModItems.ION_SPHERE);
         //itemModelGenerators.generateFlatItem(ModItems.LOTUS, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.FRUM_FRUM, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.ALCOHOL, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.BISMUTHIN, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.BISMUTH_SYNTHETIC, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.KERASENE, ModelTemplates.FLAT_ITEM);

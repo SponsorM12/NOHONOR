@@ -114,6 +114,9 @@ public class ModItems {
             new Item.Properties()
     );
 
+    public static final Item ALCOHOL = registerItem(
+            "alcohol", Item::new, new Item.Properties());
+
     public static final Item BISMUTHIN = registerItem(
             "bismuthin", Item::new, new Item.Properties());
 

@@ -40,6 +40,7 @@ public class ModCreativeTabs {
                 output.accept(ModItems.SPODUMENE);
                 output.accept(ModItems.LOTUS);
                 output.accept(ModItems.FRUM_FRUM);
+                output.accept(ModItems.ALCOHOL);
                 output.accept(ModItems.BISMUTHIN);
                 output.accept(ModItems.BISMUTH_SYNTHETIC);
                 output.accept(ModItems.KERASENE);
