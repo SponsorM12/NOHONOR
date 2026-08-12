@@ -1,4 +1,4 @@
-package zver.nohonor.client.reflection.model;
+package zver.nohonor.client.avatar_layers.reflection.model;
 
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.geom.ModelPart;

@@ -1,4 +1,4 @@
-package zver.nohonor.client.reflection;
+package zver.nohonor.client.avatar_layers.reflection;
 
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
@@ -7,7 +7,7 @@ import net.minecraft.client.renderer.entity.layers.EnergySwirlLayer;
 import net.minecraft.client.renderer.entity.state.AvatarRenderState;
 import net.minecraft.resources.Identifier;
 import net.minecraft.util.Mth;
-import zver.nohonor.client.reflection.model.ReflectionModel;
+import zver.nohonor.client.avatar_layers.reflection.model.ReflectionModel;
 
 // 1. Делаем слой обобщенным относительно модели родителя (M)
 public class ReflectionArmorLayer<M extends EntityModel<AvatarRenderState>> extends EnergySwirlLayer<AvatarRenderState, M> {

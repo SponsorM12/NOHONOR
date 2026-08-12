@@ -12,13 +12,11 @@
 
 		"LivingEntityRendererAccessor",
 
-		"reflection.AvatarRendererReflectionLayerMixin",
-		"reflection.ReflectionAvatarRendererMixin",
-		"reflection.ReflectionRenderStateMixin",
-
-		"hanahaki.AvatarRendererLayerMixin",
-		"hanahaki.AvatarRendererMixin",
-		"hanahaki.AvatarRenderStateMixin"
+		"avatar_layers.AvatarCustomLayersMixin",
+		"avatar_layers.custom.reflection.ReflectionAvatarRendererMixin",
+		"avatar_layers.custom.reflection.ReflectionRenderStateMixin",
+		"avatar_layers.custom.hanahaki.AvatarRendererMixin",
+		"avatar_layers.custom.hanahaki.AvatarRenderStateMixin"
 
 	],
 	"injectors": {

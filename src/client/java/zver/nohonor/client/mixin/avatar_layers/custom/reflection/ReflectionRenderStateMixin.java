@@ -1,9 +1,9 @@
-package zver.nohonor.client.mixin.reflection;
+package zver.nohonor.client.mixin.avatar_layers.custom.reflection;
 
 import net.minecraft.client.renderer.entity.state.AvatarRenderState;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
-import zver.nohonor.client.reflection.ReflectionRenderStateAccessor;
+import zver.nohonor.client.avatar_layers.reflection.ReflectionRenderStateAccessor;
 
 @Mixin(AvatarRenderState.class)
 public abstract class ReflectionRenderStateMixin implements ReflectionRenderStateAccessor {

@@ -1,4 +1,4 @@
-package zver.nohonor.client.hanahaki;
+package zver.nohonor.client.avatar_layers.hanahaki;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.model.player.PlayerModel;
@@ -12,7 +12,7 @@ import net.minecraft.client.renderer.rendertype.RenderTypes;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.Identifier;
 import zver.nohonor.NOHONOR;
-import zver.nohonor.client.hanahaki.model.HanahakiModel;
+import zver.nohonor.client.avatar_layers.hanahaki.model.HanahakiModel;
 import zver.nohonor.custom_mechanics.hanahaki.HanahakiVariants;
 
 public class HanahakiFeatureRenderer extends RenderLayer<AvatarRenderState, PlayerModel> {

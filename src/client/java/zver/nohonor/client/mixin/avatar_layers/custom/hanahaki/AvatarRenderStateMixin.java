@@ -1,10 +1,10 @@
-package zver.nohonor.client.mixin.hanahaki;
+package zver.nohonor.client.mixin.avatar_layers.custom.hanahaki;
 
 import net.minecraft.client.renderer.entity.state.AvatarRenderState;
 import org.jspecify.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
-import zver.nohonor.client.hanahaki.HanahakiRenderStateAccessor;
+import zver.nohonor.client.avatar_layers.hanahaki.HanahakiRenderStateAccessor;
 
 @Mixin(AvatarRenderState.class)
 public abstract class AvatarRenderStateMixin implements HanahakiRenderStateAccessor {

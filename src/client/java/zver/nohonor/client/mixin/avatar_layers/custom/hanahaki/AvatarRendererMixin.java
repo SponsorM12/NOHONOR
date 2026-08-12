@@ -1,4 +1,4 @@
-package zver.nohonor.client.mixin.hanahaki;
+package zver.nohonor.client.mixin.avatar_layers.custom.hanahaki;
 
 import net.minecraft.client.renderer.entity.player.AvatarRenderer;
 import net.minecraft.client.renderer.entity.state.AvatarRenderState;
@@ -8,17 +8,12 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import zver.nohonor.client.hanahaki.HanahakiRenderStateAccessor;
+import zver.nohonor.client.avatar_layers.hanahaki.HanahakiRenderStateAccessor;
 import zver.nohonor.custom_mechanics.hanahaki.HanahakiData;
 
 @Mixin(AvatarRenderer.class)
 public abstract class AvatarRendererMixin {
-    //Больше не проверяем hasEffect() — на клиенте, наблюдающем ЧУЖОГО игрока,
-    //activeEffects не заполнен (эффекты синхронизируются только владельцу и
-    //пассажирам). HANAHAKI_VARIANT — полноценно синхронизированное поле, и
-    //теперь оно само по себе достоверный источник правды: не null <=> эффект
-    //активен, потому что HanahakiEffect и LivingEntityHanahakiMixin
-    //гарантируют его очистку на любом снятии эффекта
+
     @Inject(method = "extractRenderState", at = @At("TAIL"))
     private void nohonor$extractHanahaki(Avatar entity, AvatarRenderState state, float partialTicks, CallbackInfo ci) {
         HanahakiRenderStateAccessor accessor = (HanahakiRenderStateAccessor) state;
@@ -28,4 +23,5 @@ public abstract class AvatarRendererMixin {
             accessor.nohonor$setHanahakiVariant(null);
         }
     }
+
 }

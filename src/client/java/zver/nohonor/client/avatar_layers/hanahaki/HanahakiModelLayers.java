@@ -1,4 +1,4 @@
-package zver.nohonor.client.hanahaki;
+package zver.nohonor.client.avatar_layers.hanahaki;
 
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.resources.Identifier;

@@ -1,4 +1,4 @@
-package zver.nohonor.client.reflection;
+package zver.nohonor.client.avatar_layers.reflection;
 
 public interface ReflectionRenderStateAccessor {
 

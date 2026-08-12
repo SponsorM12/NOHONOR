@@ -1,4 +1,4 @@
-package zver.nohonor.client.hanahaki;
+package zver.nohonor.client.avatar_layers.hanahaki;
 
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.renderer.entity.state.AvatarRenderState;

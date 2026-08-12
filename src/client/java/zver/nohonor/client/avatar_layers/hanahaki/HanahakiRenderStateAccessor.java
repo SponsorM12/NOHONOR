@@ -1,4 +1,4 @@
-package zver.nohonor.client.hanahaki;
+package zver.nohonor.client.avatar_layers.hanahaki;
 
 import org.jspecify.annotations.Nullable;
 

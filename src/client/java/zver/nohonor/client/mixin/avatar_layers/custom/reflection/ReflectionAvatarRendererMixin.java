@@ -1,4 +1,4 @@
-package zver.nohonor.client.mixin.reflection;
+package zver.nohonor.client.mixin.avatar_layers.custom.reflection;
 
 import net.minecraft.client.renderer.entity.player.AvatarRenderer;
 import net.minecraft.client.renderer.entity.state.AvatarRenderState;
@@ -8,9 +8,8 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import zver.nohonor.client.reflection.ReflectionRenderStateAccessor;
+import zver.nohonor.client.avatar_layers.reflection.ReflectionRenderStateAccessor;
 import zver.nohonor.custom_mechanics.reflection.ReflectionData;
-import zver.nohonor.effect.ModEffects; // Не забудьте импортировать ваш эффект
 
 @Mixin(AvatarRenderer.class)
 public abstract class ReflectionAvatarRendererMixin {

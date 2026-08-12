@@ -1,4 +1,4 @@
-package zver.nohonor.client.reflection;
+package zver.nohonor.client.avatar_layers.reflection;
 
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.resources.Identifier;

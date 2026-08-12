@@ -8,12 +8,12 @@ import net.minecraft.client.renderer.entity.EntityRenderers;
 import zver.nohonor.client.entity.ModEntityModelLayers;
 import zver.nohonor.client.entity.boat.ModBoatRenderer;
 import zver.nohonor.client.entity.gnome.GnomeEntityRenderer;
-import zver.nohonor.client.hanahaki.HanahakiModelLayers;
-import zver.nohonor.client.hanahaki.model.HanahakiModel;
+import zver.nohonor.client.avatar_layers.hanahaki.HanahakiModelLayers;
+import zver.nohonor.client.avatar_layers.hanahaki.model.HanahakiModel;
 import zver.nohonor.client.hud.tenacity.ModHudElements;
-import zver.nohonor.client.reflection.ReflectionArmorLayer;
-import zver.nohonor.client.reflection.ReflectionModelLayers;
-import zver.nohonor.client.reflection.model.ReflectionModel;
+import zver.nohonor.client.avatar_layers.reflection.ReflectionArmorLayer;
+import zver.nohonor.client.avatar_layers.reflection.ReflectionModelLayers;
+import zver.nohonor.client.avatar_layers.reflection.model.ReflectionModel;
 import zver.nohonor.entity.ModEntityTypes;
 import zver.nohonor.particle.ModParticleFactories;
 
