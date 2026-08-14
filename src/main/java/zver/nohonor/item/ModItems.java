@@ -21,6 +21,10 @@ import zver.nohonor.item.custom.pearl_silver.PearlSilverAxeItem;
 import zver.nohonor.item.custom.pearl_silver.PearlSilverSwordItem;
 import zver.nohonor.item.custom.TenacityFoodItem;
 import zver.nohonor.item.custom.pearl_silver.PearlSilverMaceItem;
+import zver.nohonor.item.special.custom.HellesteroyItem;
+import zver.nohonor.item.special.custom.LumelItem;
+import zver.nohonor.item.special.custom.LyutyyItem;
+import zver.nohonor.item.special.custom.VivariumItem;
 import zver.nohonor.sound.ModJukeboxSongs;
 import static zver.nohonor.utilit.TooltipHelper.*;
 
@@ -281,17 +285,17 @@ public class ModItems {
     );
 
     public static final Item RAW_LYUTYY = registerItem("raw_lyutyy",
-            props -> new ModTooltipItems(HOPBUSH, props),
+            props -> new LyutyyItem(HOPBUSH, props),
             new Item.Properties()
     );
 
     public static final Item LYUTYY_INGOT = registerItem("lyutyy_ingot",
-            props -> new ModTooltipItems(HOPBUSH, props),
+            props -> new LyutyyItem(HOPBUSH, props),
             new Item.Properties()
     );
 
     public static final Item LYUTYY_NUGGET = registerItem("lyutyy_nugget",
-            props -> new ModTooltipItems(HOPBUSH, props),
+            props -> new LyutyyItem(HOPBUSH, props),
             new Item.Properties()
     );
 
@@ -311,20 +315,19 @@ public class ModItems {
     );
 
     public static final Item RAW_LUMEL = registerItem(
-            "raw_lumel",properties -> new ModTooltipItems("item.nohonor.raw_lumel.desc", 1, COLUMBIA, properties), new Item.Properties()
+            "raw_lumel",properties -> new LumelItem("item.nohonor.raw_lumel.desc", 1, COLUMBIA, properties), new Item.Properties()
                     //.rarity(Rarity.RARE)
                     .fireResistant()
     );
 
-
     public static final Item LUMEL_INGOT = registerItem("lumel_ingot",
-            props -> new ModTooltipItems(COLUMBIA, props),
+            props -> new LumelItem(COLUMBIA, props),
             new Item.Properties()
                     .fireResistant()
     );
 
     public static final Item LUMEL_NUGGET = registerItem("lumel_nugget",
-            props -> new ModTooltipItems(COLUMBIA, props),
+            props -> new LumelItem(COLUMBIA, props),
             new Item.Properties()
                     .fireResistant()
     );
@@ -409,35 +412,35 @@ public class ModItems {
     );
 
     public static final Item RAW_VIVARIUM = registerItem(
-            "raw_vivarium",properties -> new ModTooltipItems("item.nohonor.raw_vivarium.desc", 2, MARGUERITE, properties), new Item.Properties()
+            "raw_vivarium",properties -> new VivariumItem("item.nohonor.raw_vivarium.desc", 2, MARGUERITE, properties), new Item.Properties()
                     .fireResistant()
     );
 
     public static final Item VIVARIUM_INGOT = registerItem("vivarium_ingot",
-            props -> new ModTooltipItems(MARGUERITE, props),
+            props -> new VivariumItem(MARGUERITE, props),
             new Item.Properties()
                     .fireResistant()
     );
 
     public static final Item VIVARIUM_NUGGET = registerItem("vivarium_nugget",
-            props -> new ModTooltipItems(MARGUERITE, props),
+            props -> new VivariumItem(MARGUERITE, props),
             new Item.Properties()
                     .fireResistant()
     );
 
     public static final Item RAW_HELLESTEROY = registerItem(
-            "raw_hellesteroy",properties -> new ModTooltipItems("item.nohonor.raw_hellesteroy.desc", 1, CASABLANCA, properties), new Item.Properties()
+            "raw_hellesteroy",properties -> new HellesteroyItem("item.nohonor.raw_hellesteroy.desc", 1, CASABLANCA, properties), new Item.Properties()
                     .fireResistant()
     );
 
     public static final Item HELLESTEROY_INGOT = registerItem("hellesteroy_ingot",
-            props -> new ModTooltipItems(CASABLANCA, props),
+            props -> new HellesteroyItem(CASABLANCA, props),
             new Item.Properties()
                     .fireResistant()
     );
 
     public static final Item HELLESTEROY_NUGGET = registerItem("hellesteroy_nugget",
-            props -> new ModTooltipItems(CASABLANCA, props),
+            props -> new HellesteroyItem(CASABLANCA, props),
             new Item.Properties()
                     .fireResistant()
     );

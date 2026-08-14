@@ -15,13 +15,17 @@ public class ReflectionEffect extends MobEffect {
         super(category, color);
     }
 
+    // ReflectionEffect.java — оба места, где сейчас true/false, дописать амплификатор
     @Override
     public void onEffectStarted(LivingEntity mob, int amplifier) {
         super.onEffectStarted(mob, amplifier);
         if (mob.level().isClientSide()) return;
         if (mob instanceof Player player) {
-            ((ReflectionData) player).setReflecting(true);
+            ReflectionData data = (ReflectionData) player;
+            data.setReflecting(true);
+            data.setReflectionAmplifier(amplifier);
         }
+
     }
 
     @Override

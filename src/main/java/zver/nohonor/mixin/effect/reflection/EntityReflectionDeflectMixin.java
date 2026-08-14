@@ -31,21 +31,22 @@ public abstract class EntityReflectionDeflectMixin {
         if (isReflecting) {
             self.level().playSound((Entity) null, self, SoundEvents.BREEZE_DEFLECT, self.getSoundSource(), 1.0F, 1.0F);
 
+            // EntityReflectionDeflectMixin.java — читаем амплификатор из того же безопасного источника
             int amplifier = 0;
-            if (self instanceof LivingEntity living) {
+            if (self instanceof ReflectionData reflectionData) {
+                amplifier = reflectionData.getReflectionAmplifier();
+            } else if (self instanceof LivingEntity living) {
                 MobEffectInstance effect = living.getEffect(ModEffects.REFLECTION);
-                if (effect != null) {
-                    amplifier = effect.getAmplifier();
-                }
+                if (effect != null) amplifier = effect.getAmplifier();
             }
 
             final int finalAmplifier = amplifier;
             ProjectileDeflection customDeflection = (proj, entity, random) -> {
-                // 1. Небольшой разброс (170°..190°) предотвращает мертвые петли между двумя сущностями
+                //Небольшой разброс (170 +- 190) предотвращает мертвые петли между двумя сущностями
                 float rotation = 170.0F + random.nextFloat() * 20.0F;
 
-                // 2. Расчет базового множителя
-                double speedMultiplier = -0.5 * (1.0 + (finalAmplifier * 0.75));
+                //Расчет базового множителя
+                double speedMultiplier = -0.5 * (1.0 + (finalAmplifier * 3.0));
 
                 Vec3 currentMovement = proj.getDeltaMovement();
                 Vec3 newMovement = currentMovement.scale(speedMultiplier);
