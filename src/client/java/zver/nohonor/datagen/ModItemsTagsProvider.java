@@ -136,6 +136,7 @@ public class ModItemsTagsProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModItems.getRK(ModItems.PEARL_SILVER_INGOT))
                 .add(ModItems.getRK(ModItems.KARELITE_INGOT))
                 .add(ModItems.getRK(ModItems.KHRAMOVAYA_STEEL_INGOT))
+                .add(ModItems.getRK(ModItems.LYUTYY_INGOT))
                 .add(ModItems.getRK(ModItems.LUMEL_INGOT))
                 .add(ModItems.getRK(ModItems.MALLEABLE_CAST_IRON_INGOT))
                 .add(ModItems.getRK(ModItems.NOUS_INGOT))

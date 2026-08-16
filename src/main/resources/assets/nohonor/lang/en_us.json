@@ -685,7 +685,7 @@
 
   "advancement.nohonor.root.title": "§cNO HONOR",
   "advancement.nohonor.root.description": "§7Start playing the NO HONOR!!!\n§8I DID IT!!! I DID IT!!!! AHAHAHAÆHÆÆ-",
-  "advancement.nohonor.hellishly_cold.title": "§bHellishly cold",
+  "advancement.nohonor.hellishly_cold.title": "Hellishly cold",
   "advancement.nohonor.hellishly_cold.description": "Find Lumel",
   "advancement.nohonor.the_power_of_a_sorcerer_in_a_crystal.title": "The Power of a Sorcerer in a Crystal",
   "advancement.nohonor.the_power_of_a_sorcerer_in_a_crystal.description": "§7Find Shcherba'Rune",
@@ -707,4 +707,5 @@
   "advancement.nohonor.toothpaste.description": "§7Get Titanium",
   "advancement.nohonor.galvanized_metall.title": "Galvanized Metall",
   "advancement.nohonor.galvanized_metall.description": "§7Get Zubets"
+
 }

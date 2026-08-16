@@ -50,7 +50,7 @@ public class ModPotionRecipes {
 
             //===============================================ШАТТЕР РАСКОЛ===========================================================
                                         //Из какого зелья?----------------------Предмет для варки-------------Результат
-            builder.registerPotionRecipe(Potions.AWKWARD, Ingredient.of(ModItems.YELLOW_ARKADY_THORN), ModPotions.SHATTER_POTION);
+            builder.registerPotionRecipe(Potions.AWKWARD, Ingredient.of(ModItems.KERASENE), ModPotions.SHATTER_POTION);
             builder.registerPotionRecipe(ModPotions.SHATTER_POTION, Ingredient.of(Items.REDSTONE), ModPotions.LONG_SHATTER_POTION);
             builder.registerPotionRecipe(ModPotions.SHATTER_POTION, Ingredient.of(Items.GLOWSTONE_DUST), ModPotions.STRONG_SHATTER_POTION);
 

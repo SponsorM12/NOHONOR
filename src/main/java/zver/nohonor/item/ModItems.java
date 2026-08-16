@@ -21,10 +21,7 @@ import zver.nohonor.item.custom.pearl_silver.PearlSilverAxeItem;
 import zver.nohonor.item.custom.pearl_silver.PearlSilverSwordItem;
 import zver.nohonor.item.custom.TenacityFoodItem;
 import zver.nohonor.item.custom.pearl_silver.PearlSilverMaceItem;
-import zver.nohonor.item.special.custom.HellesteroyItem;
-import zver.nohonor.item.special.custom.LumelItem;
-import zver.nohonor.item.special.custom.LyutyyItem;
-import zver.nohonor.item.special.custom.VivariumItem;
+import zver.nohonor.item.special.custom.*;
 import zver.nohonor.sound.ModJukeboxSongs;
 import static zver.nohonor.utilit.TooltipHelper.*;
 
@@ -107,7 +104,7 @@ public class ModItems {
 
     public static final Item FRUM_FRUM = registerItem(
             "frum_frum",
-            properties -> new ModTooltipItems("item.nohonor.frum_frum.desc", properties),
+            properties -> new MercuryItem("item.nohonor.frum_frum.desc", properties),
             new Item.Properties()
                     .food(ModFoods.FRUM_FRUM, ModFoods.FRUM_FRUM_CONSUMABLE)
     );
@@ -333,19 +330,19 @@ public class ModItems {
     );
 
     public static final Item RAW_SHCHERBARUNE = registerItem("raw_shcherbarune",
-            props -> new ModTooltipItems("item.nohonor.raw_shcherbarune.desc", 1, ILLUSION, props),
+            props -> new ShcherbaruneItem("item.nohonor.raw_shcherbarune.desc", 1, ILLUSION, props),
             new Item.Properties()
                     .fireResistant()
     );
 
     public static final Item SHCHERBARUNE = registerItem("shcherbarune",
-            props -> new ModTooltipItems(ILLUSION, props),
+            props -> new ShcherbaruneItem(ILLUSION, props),
             new Item.Properties()
                     .fireResistant()
     );
 
     public static final Item SHCHERBARUNE_SHARD = registerItem("shcherbarune_shard",
-            props -> new ModTooltipItems(ILLUSION, props),
+            props -> new ShcherbaruneItem(ILLUSION, props),
             new Item.Properties()
                     .fireResistant()
     );
@@ -446,18 +443,18 @@ public class ModItems {
     );
 
     public static final Item RAW_DURANSTEEL = registerItem(
-            "raw_duransteel",properties -> new ModTooltipItems("item.nohonor.raw_duransteel.desc", 1, ORCHID, properties), new Item.Properties()
+            "raw_duransteel",properties -> new HeavyMetalItem("item.nohonor.raw_duransteel.desc", 1, ORCHID, properties), new Item.Properties()
                     .fireResistant()
     );
 
     public static final Item DURANSTEEL_INGOT = registerItem("duransteel_ingot",
-            props -> new ModTooltipItems(ORCHID, props),
+            props -> new HeavyMetalItem(ORCHID, props),
             new Item.Properties()
                     .fireResistant()
     );
 
     public static final Item DURANSTEEL_NUGGET = registerItem("duransteel_nugget",
-            props -> new ModTooltipItems(ORCHID, props),
+            props -> new HeavyMetalItem(ORCHID, props),
             new Item.Properties()
                     .fireResistant()
     );

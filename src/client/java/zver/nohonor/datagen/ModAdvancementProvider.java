@@ -124,7 +124,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                     .addCriterion("has_raw_chromium", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.RAW_CHROMIUM))
                     .addCriterion("has_chromium_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.CHROMIUM_INGOT))
                     .addCriterion("has_raw_lyutyy", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.RAW_LYUTYY))
-                    .addCriterion("has_lyutyy_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.LUMEL_INGOT))
+                    .addCriterion("has_lyutyy_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.LYUTYY_INGOT))
                     .addCriterion("has_raw_plymblum", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.RAW_PLYMBLUM))
                     .addCriterion("has_plymblum_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.PLYMBLUM_INGOT))
                     .addCriterion("has_raw_pearl_silver", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.RAW_PEARL_SILVER))
@@ -198,7 +198,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             true, true, true
                     )
                     .addCriterion("has_raw_lyutyy", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.RAW_LYUTYY))
-                    .addCriterion("has_lyutyy_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.LYUTYY_INGOT)) // Исправлена опечатка из new_shiny_things (там был LUMEL_INGOT)
+                    .addCriterion("has_lyutyy_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.LYUTYY_INGOT))
                     .requirements(AdvancementRequirements.anyOf(List.of(
                             "has_raw_lyutyy",
                             "has_lyutyy_ingot"

@@ -371,11 +371,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 //=====================================================ХРАМОВАЯ============================================================
                 //КАМЕНЬ
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.KHRAMOVAYA_STONE)
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.KHRAMOVAYA_STONE, 5)
                         .pattern("ABA")
                         .pattern("BAB")
                         .pattern("ABA")
-                        .define('A', ModBlocks.KHRAMOVAYA_STONE)
+                        .define('A', ModItems.KHRAMOVAYA_STEEL_NUGGET)
                         .define('B', Blocks.COBBLESTONE)
                         .unlockedBy(getHasName(ModItems.KHRAMOVAYA_STEEL_INGOT), has(ModItems.KHRAMOVAYA_STEEL_INGOT))
                         .unlockedBy(getHasName(ModItems.KHRAMOVAYA_STEEL_NUGGET), has(ModItems.KHRAMOVAYA_STEEL_NUGGET))

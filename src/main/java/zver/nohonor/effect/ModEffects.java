@@ -70,7 +70,7 @@ public class ModEffects extends MobEffects {
         return Registry.registerForHolder(BuiltInRegistries.MOB_EFFECT, Identifier.fromNamespaceAndPath(NOHONOR.MOD_ID, name), effect);
     }
 
-    public static void Initialize() {
+    public static void initialize() {
         NOHONOR.LOGGER.info("Registering Effects for " + NOHONOR.MOD_ID);
     }
 

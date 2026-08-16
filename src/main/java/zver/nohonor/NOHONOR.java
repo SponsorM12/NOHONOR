@@ -13,7 +13,6 @@ import zver.nohonor.entity.boat.ModBoats;
 import zver.nohonor.fluid.ModFluids;
 import zver.nohonor.init.*;
 import zver.nohonor.item.ModItems;
-import zver.nohonor.item.special.SpecialItemDispatcher;
 import zver.nohonor.particle.ModParticles;
 import zver.nohonor.potion.ModPotions;
 import zver.nohonor.sound.ModSounds;
@@ -43,9 +42,9 @@ public class NOHONOR implements ModInitializer {
         // Действуйте с осторожностью.
 
 		//ТУТ ВАЖНО НЕ ОБОСРАТЬСЯ С ПОРЯДКОМ ЗАГРУЗКИ
+		//Правило - common всегда раньше client
 		ModBlocks.initialize();
 		ModItems.initialize();
-		SpecialItemDispatcher.initialize();
 		ModFluids.initialize();
 
 		ModParticles.initialize();
@@ -65,7 +64,7 @@ public class NOHONOR implements ModInitializer {
 		ModEntityTypes.registerAttributes();
 		ModBoats.initialize();
 
-		ModEffects.Initialize();
+		ModEffects.initialize();
 
 		HanahakiVariants.initialize();
 

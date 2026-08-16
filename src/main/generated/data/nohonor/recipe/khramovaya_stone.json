@@ -3,7 +3,7 @@
   "category": "building",
   "group": "khramovaya_stone",
   "key": {
-    "A": "nohonor:khramovaya_stone",
+    "A": "nohonor:khramovaya_steel_nugget",
     "B": "minecraft:cobblestone"
   },
   "pattern": [
@@ -12,6 +12,7 @@
     "ABA"
   ],
   "result": {
+    "count": 5,
     "id": "nohonor:khramovaya_stone"
   }
 }

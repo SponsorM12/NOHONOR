@@ -13,7 +13,10 @@
 		"tenacity.LivingEntityTenacityMixin",
 		"tenacity.PlayerTenacityMixin",
 
+		"item.special.ItemEntitySpecialBehaviorMixin",
+
 		"armor.silver_pearl.LivingEntityPearlSilverArmorMixin",
+
 		"effect.immunity.LivingEntityImmunityMixin",
 		"effect.curse.LivingEntityCurseMixin",
 		"effect.no_fly.PlayerNoFlyGlideMixin",
