@@ -10,9 +10,11 @@ import zver.nohonor.custom_mechanics.hanahaki.HanahakiVariants;
 import zver.nohonor.effect.ModEffects;
 import zver.nohonor.entity.ModEntityTypes;
 import zver.nohonor.entity.boat.ModBoats;
+import zver.nohonor.entity.villager.ModVillagers;
 import zver.nohonor.fluid.ModFluids;
 import zver.nohonor.init.*;
 import zver.nohonor.item.ModItems;
+import zver.nohonor.networking.ModPackets;
 import zver.nohonor.particle.ModParticles;
 import zver.nohonor.potion.ModPotions;
 import zver.nohonor.sound.ModSounds;
@@ -51,7 +53,16 @@ public class NOHONOR implements ModInitializer {
 		ModWoodTypes.initialize();
 		ModSounds.initialize();
 
+		ModEntityTypes.registerModEntityTypes();
+		ModEntityTypes.registerAttributes();
+		ModVillagers.initialize();
+		ModBoats.initialize();
+
 		ModLootTableModifiers.initialize();
+
+		ModEffects.initialize();
+
+		HanahakiVariants.initialize();
 
 		ModCreativeTabs.initialize();
 		ModFuels.initialize();
@@ -60,13 +71,7 @@ public class NOHONOR implements ModInitializer {
 		ModCompostables.initialize();
 		ModStats.initialize();
 
-		ModEntityTypes.registerModEntityTypes();
-		ModEntityTypes.registerAttributes();
-		ModBoats.initialize();
-
-		ModEffects.initialize();
-
-		HanahakiVariants.initialize();
+		ModPackets.initialize();
 
 		//Класс попадает в onInitialize() явным вызовом,
 		// если у него есть либо: 1. собственные static-поля с регистрацией,

@@ -1,4 +1,4 @@
-package zver.nohonor.datagen.villager;
+package zver.nohonor.entity.villager;
 
 import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
@@ -34,8 +34,21 @@ public class ModVillagerTrades {
 //====================================================СМИТ КУЗНЕЦ======================================================================
     public static final ResourceKey<VillagerTrade> COMMON_SMITH_2_PEARL_SILVER_INGOT_EMERALD = createKey("smith/2/pearl_silver_ingot_emerald");
 
-//========================================================КЕЛЕРИК=============================================================================
+//========================================================КЕЛЕРИК============================================================================
     public static final ResourceKey<VillagerTrade> CLERIC_5_KARELITE_INGOT_PEARL_GARANT = createKey("cleric/5/kaelite_ingot_pearl_garant");
+
+//==================================================ТЯЖЕЛЫЙ КУЗНЕЦ======================================================================
+    public static final ResourceKey<VillagerTrade> HEAVY_BLACKSMITH_1_BLACK_BONE_EMERALD = createKey("heavy_blacksmith/1/black_bone_emerald");
+    public static final ResourceKey<VillagerTrade> HEAVY_BLACKSMITH_1_BAUXITE_RAW_IRON = createKey("heavy_blacksmith/1/bauxite_raw_iron");
+    public static final ResourceKey<VillagerTrade> HEAVY_BLACKSMITH_2_CHARRED_STONE_EMERALD = createKey("heavy_blacksmith/2/charred_stone_emerald");
+    public static final ResourceKey<VillagerTrade> HEAVY_BLACKSMITH_2_GALENA_RAW_GOLD = createKey("heavy_blacksmith/2/galena_raw_gold");
+    public static final ResourceKey<VillagerTrade> HEAVY_BLACKSMITH_3_CAST_IRON_INGOT_CHARRED_STONE = createKey("heavy_blacksmith/3/cast_iron_ingot");
+    public static final ResourceKey<VillagerTrade> HEAVY_BLACKSMITH_3_SPODUMENE_BLACK_BONE = createKey("heavy_blacksmith/3/spodumene_black_bone");
+    public static final ResourceKey<VillagerTrade> HEAVY_BLACKSMITH_4_SHCHERBARUNE_PEARL_GARANT = createKey("heavy_blacksmith/4/shcherbarune_pearl_garant");
+    public static final ResourceKey<VillagerTrade> HEAVY_BLACKSMITH_4_LUMEL_INGOT_PEARL_GARANT = createKey("heavy_blacksmith/4/lumel_ingot_pearl_garant");
+    public static final ResourceKey<VillagerTrade> HEAVY_BLACKSMITH_5_PEARL_GARANT_NETHERITE_SCRAP = createKey("heavy_blacksmith/5/pearl_garant_netherite_scrap");
+    public static final ResourceKey<VillagerTrade> HEAVY_BLACKSMITH_5_PEARL_GARANT_CAST_BULAT_INGOT = createKey("heavy_blacksmith/5/pearl_garant_cast_bulat_ingot");
+
 
 //======================================================================================================================================
 //======================================================================================================================================
@@ -102,8 +115,79 @@ public class ModVillagerTrades {
                 Optional.empty(), List.of()
         ));
 
+//==================================================ТЯЖЕЛЫЙ КУЗНЕЦ==================================================
+        context.register(HEAVY_BLACKSMITH_1_BAUXITE_RAW_IRON, new VillagerTrade(
+                new TradeCost(ModItems.BAUXITE, 7),
+                new ItemStackTemplate(Items.RAW_IRON, 1),
+                12, 16, 0.05f,
+                Optional.empty(), List.of()
+        ));
+
+        context.register(HEAVY_BLACKSMITH_1_BLACK_BONE_EMERALD, new VillagerTrade(
+                new TradeCost(ModItems.BLACK_BONE, 5),
+                new ItemStackTemplate(Items.EMERALD, 2),
+                16, 8, 0.05f,
+                Optional.empty(), List.of()
+        ));
+
+        context.register(HEAVY_BLACKSMITH_2_CHARRED_STONE_EMERALD, new VillagerTrade(
+                new TradeCost(ModItems.CHARRED_STONE, 2),
+                new ItemStackTemplate(Items.EMERALD, 1),
+                16, 16, 0.05f,
+                Optional.empty(), List.of()
+        ));
+
+        context.register(HEAVY_BLACKSMITH_2_GALENA_RAW_GOLD, new VillagerTrade(
+                new TradeCost(ModItems.GALENA, 9),
+                new ItemStackTemplate(Items.RAW_GOLD, 2),
+                16, 18, 0.06f,
+                Optional.empty(), List.of()
+        ));
+
+        context.register(HEAVY_BLACKSMITH_3_CAST_IRON_INGOT_CHARRED_STONE, new VillagerTrade(
+                new TradeCost(ModItems.CAST_IRON_INGOT, 3),
+                new ItemStackTemplate(ModItems.CHARRED_STONE, 2),
+                16, 8, 0.05f,
+                Optional.empty(), List.of()
+        ));
+
+        context.register(HEAVY_BLACKSMITH_3_SPODUMENE_BLACK_BONE, new VillagerTrade(
+                new TradeCost(ModItems.SPODUMENE, 3),
+                new ItemStackTemplate(ModItems.BLACK_BONE, 1),
+                16, 8, 0.05f,
+                Optional.empty(), List.of()
+        ));
+
+        context.register(HEAVY_BLACKSMITH_4_LUMEL_INGOT_PEARL_GARANT, new VillagerTrade(
+                new TradeCost(ModItems.LUMEL_INGOT, 20),
+                new ItemStackTemplate(ModItems.PEARL_GARANT, 1),
+                32, 20, 0.03f,
+                Optional.empty(), List.of()
+        ));
+
+        context.register(HEAVY_BLACKSMITH_4_SHCHERBARUNE_PEARL_GARANT, new VillagerTrade(
+                new TradeCost(ModItems.SHCHERBARUNE, 22),
+                new ItemStackTemplate(ModItems.PEARL_GARANT, 1),
+                32, 20, 0.03f,
+                Optional.empty(), List.of()
+        ));
+
+        context.register(HEAVY_BLACKSMITH_5_PEARL_GARANT_NETHERITE_SCRAP, new VillagerTrade(
+                new TradeCost(ModItems.PEARL_GARANT, 61),
+                new ItemStackTemplate(Items.NETHERITE_SCRAP, 1),
+                4, 18, 0.05f,
+                Optional.empty(), List.of()
+        ));
+
+        context.register(HEAVY_BLACKSMITH_5_PEARL_GARANT_CAST_BULAT_INGOT, new VillagerTrade(
+                new TradeCost(ModItems.PEARL_GARANT, 60),
+                new ItemStackTemplate(ModItems.CAST_BULAT_INGOT, 1),
+                8, 16, 0.05f,
+                Optional.empty(), List.of()
+        ));
 
     }
+
 
 
     private static ResourceKey<VillagerTrade> createKey(String name) {

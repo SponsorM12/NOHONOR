@@ -5,6 +5,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.trading.VillagerTrade;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.material.Fluid;
 import zver.nohonor.NOHONOR;
@@ -81,5 +82,19 @@ public class ModTags {
             return TagKey.create(Registries.ENTITY_TYPE, Identifier.fromNamespaceAndPath(NOHONOR.MOD_ID, name));
         };
     }
+
+    public static class Trades {
+
+        public static final TagKey<VillagerTrade> HEAVY_BLACKSMITH_LEVEL_1 = createTag("heavy_blacksmith/level_1");
+        public static final TagKey<VillagerTrade> HEAVY_BLACKSMITH_LEVEL_2 = createTag("heavy_blacksmith/level_2");
+        public static final TagKey<VillagerTrade> HEAVY_BLACKSMITH_LEVEL_3 = createTag("heavy_blacksmith/level_3");
+        public static final TagKey<VillagerTrade> HEAVY_BLACKSMITH_LEVEL_4 = createTag("heavy_blacksmith/level_4");
+        public static final TagKey<VillagerTrade> HEAVY_BLACKSMITH_LEVEL_5 = createTag("heavy_blacksmith/level_5");
+
+        private static TagKey<VillagerTrade> createTag(String name) {
+            return TagKey.create(Registries.VILLAGER_TRADE, Identifier.fromNamespaceAndPath(NOHONOR.MOD_ID, name));
+        }
+    }
+
 }
 

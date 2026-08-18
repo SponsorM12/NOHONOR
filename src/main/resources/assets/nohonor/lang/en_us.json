@@ -681,6 +681,7 @@
 
   "stat.nohonor.tenacity_restored": "Tenacity Restored",
 
+  "entity.minecraft.villager.nohonor.heavy_blacksmith": "Heavy Blacksmith",
   "entity.nohonor.gnome": "Gnome",
 
   "advancement.nohonor.root.title": "§cNO HONOR",
@@ -706,6 +707,8 @@
   "advancement.nohonor.toothpaste.title": "...a Toothpaste?",
   "advancement.nohonor.toothpaste.description": "§7Get Titanium",
   "advancement.nohonor.galvanized_metall.title": "Galvanized Metall",
-  "advancement.nohonor.galvanized_metall.description": "§7Get Zubets"
+  "advancement.nohonor.galvanized_metall.description": "§7Get Zubets",
+
+  "key.nohonor.keymapping": "Key Mapping"
 
 }
