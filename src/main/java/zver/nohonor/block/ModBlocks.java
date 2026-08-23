@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.data.BlockFamilies;
 import net.minecraft.data.BlockFamily;
+import net.minecraft.references.BlockItemIds;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.world.item.HangingSignItem;
 import net.minecraft.world.item.SignItem;
@@ -25,10 +26,14 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import zver.nohonor.block.custom.*;
+import zver.nohonor.block.custom.hellesteroy_block.HellesteroyBlock;
+import zver.nohonor.block.custom.lumel_block.LumelBlock;
 import zver.nohonor.block.custom.pedestal.PedestalBlock;
 import zver.nohonor.block.custom.plush.PlushBlocks;
+import zver.nohonor.block.custom.vivarium_block.VivariumBlock;
 import zver.nohonor.fluid.ModFluids;
 import zver.nohonor.item.ModItems;
+import zver.nohonor.item.special.custom.HellesteroyItem;
 import zver.nohonor.tag.ModTags;
 import zver.nohonor.world.tree.ModTreeGrowers;
 
@@ -62,6 +67,93 @@ public class ModBlocks {
             true
     );
 
+//=======================================ЖЕЛЕЗНЫЕ БЛОКИ===============================================
+    //NETHERITE_BLOCK = register(BlockItemIds.NETHERITE_BLOCK,
+    // BlockBehaviour.Properties.of()
+    // .mapColor(MapColor.COLOR_BLACK)
+    // .requiresCorrectToolForDrops()
+    // .strength(50.0F, 1200.0F)
+    // .sound(SoundType.NETHERITE_BLOCK));
+
+    //GOLD_BLOCK = register(BlockItemIds.GOLD_BLOCK, Properties.of()
+    // .mapColor(MapColor.GOLD)
+    // .instrument(NoteBlockInstrument.BELL)
+    // .requiresCorrectToolForDrops()
+    // .strength(3.0F, 6.0F)
+    // .sound(SoundType.METAL));
+
+    public static final Block PYRITE_BLOCK = register(
+            "pyrite_block",
+            Block::new,
+            BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)
+                    .strength(3.0f, 5.0f),
+            true
+    );
+
+    public static final Block GLINIY_BLOCK = register(
+        "gliniy_block",
+        Block::new,
+        BlockBehaviour.Properties.of()
+                .requiresCorrectToolForDrops()
+                .sound(SoundType.METAL)
+                .strength(3.0f, 6.0f),
+        true
+    );
+
+    public static final Block TITANIUM_BLOCK = register(
+            "titanium_block",
+            Block::new,
+            BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)
+                    .strength(3.5f, 7.0f),
+            true
+    );
+
+    public static final Block LUMEL_BLOCK = register(
+            "lumel_block",
+            LumelBlock::new,
+            BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)
+                    .strength(6f, 12f),
+            true
+    );
+
+    public static final Block KARELITE_BLOCK = register(
+            "karelite_block",
+            Block::new,
+            BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)
+                    .strength(5f, 6.0f),
+            true
+    );
+
+    public static final Block HELLESTEROY_BLOCK = register(
+            "hellesteroy_block",
+            HellesteroyBlock::new,
+            BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.NETHERITE_BLOCK)
+                    .strength(40f, 16f),
+            true
+    );
+
+    public static final Block VIVARIUM_BLOCK = register(
+            "vivarium_block",
+            VivariumBlock::new,
+            BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.NETHERITE_BLOCK)
+                    .strength(40f, 16f),
+            false
+    );
+
+
+//==============================================ПЛЮШ============================================
     public static final Block PLUSHE_SHARK = register(
             "plushe_shark",
             properties -> new PlushBlocks(properties),
@@ -529,6 +621,18 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .explosionResistance(3.0f)
                     .sound(SoundType.DEEPSLATE),
+            true
+    );
+
+//КРОКОИТ
+    public static final Block END_STONE_CROCOITE_ORE = register(
+            "end_stone_crocoite_ore",
+            Block::new,
+            BlockBehaviour.Properties.of()
+                    .strength(4.0f)
+                    .requiresCorrectToolForDrops()
+                    .explosionResistance(9.0f)
+                    .sound(SoundType.STONE),
             true
     );
 

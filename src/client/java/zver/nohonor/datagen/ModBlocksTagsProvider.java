@@ -87,9 +87,18 @@ public class ModBlocksTagsProvider extends FabricTagsProvider.BlockTagsProvider 
                 .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_BAUXITE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.SPODUMENE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_SPODUMENE_ORE))
+                .add(ModBlocks.getRK(ModBlocks.END_STONE_CROCOITE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.NETHER_LUMEL_ORE))
                 .add(ModBlocks.getRK(ModBlocks.NETHER_SHCHERBARUNE_ORE))
-                .add(ModBlocks.getRK(ModBlocks.END_STONE_BISMUTH_ORE));
+                .add(ModBlocks.getRK(ModBlocks.END_STONE_BISMUTH_ORE))
+
+                .add(ModBlocks.getRK(ModBlocks.PYRITE_ORE))
+                .add(ModBlocks.getRK(ModBlocks.GLINIY_BLOCK))
+                .add(ModBlocks.getRK(ModBlocks.TITANIUM_BLOCK))
+                .add(ModBlocks.getRK(ModBlocks.LUMEL_BLOCK))
+                .add(ModBlocks.getRK(ModBlocks.KARELITE_BLOCK))
+                .add(ModBlocks.getRK(ModBlocks.HELLESTEROY_BLOCK))
+                .add(ModBlocks.getRK(ModBlocks.VIVARIUM_BLOCK));
 
 //===============================МОТЫГА====================================
         tag(BlockTags.MINEABLE_WITH_HOE)
@@ -107,7 +116,11 @@ public class ModBlocksTagsProvider extends FabricTagsProvider.BlockTagsProvider 
                 .add(ModBlocks.getRK(ModBlocks.BAUXITE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_BAUXITE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_PYRITE_ORE))
-                .add(ModBlocks.getRK(ModBlocks.END_STONE_BISMUTH_ORE));
+                //добовляем чистые металлы, сплавы в Алмазе
+                .add(ModBlocks.getRK(ModBlocks.PYRITE_BLOCK))
+                .add(ModBlocks.getRK(ModBlocks.GLINIY_BLOCK))
+                .add(ModBlocks.getRK(ModBlocks.TITANIUM_BLOCK));
+
 
 //=============================НУЖНО СЕРЕБРО============================
         tag(ModTags.Blocks.NEEDS_PEARL_SILVER_TOOL)
@@ -121,8 +134,16 @@ public class ModBlocksTagsProvider extends FabricTagsProvider.BlockTagsProvider 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.getRK(ModBlocks.SPODUMENE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_SPODUMENE_ORE))
+                .add(ModBlocks.getRK(ModBlocks.END_STONE_CROCOITE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.NETHER_LUMEL_ORE))
-                .add(ModBlocks.getRK(ModBlocks.NETHER_SHCHERBARUNE_ORE));
+                .add(ModBlocks.getRK(ModBlocks.NETHER_SHCHERBARUNE_ORE))
+                .add(ModBlocks.getRK(ModBlocks.END_STONE_BISMUTH_ORE))
+                .add(ModBlocks.getRK(ModBlocks.LUMEL_BLOCK))
+                //.add(ModBlocks.getRK(ModBlocks.SHCHERBARUNE_BLOCK))
+                //сплавы всех порядоков
+                .add(ModBlocks.getRK(ModBlocks.KARELITE_BLOCK))
+                .add(ModBlocks.getRK(ModBlocks.HELLESTEROY_BLOCK))
+                .add(ModBlocks.getRK(ModBlocks.VIVARIUM_BLOCK));
 
 //===============================КАМЕННЫЕ ТЭГИ===================================
         tag(BlockTags.SCULK_REPLACEABLE)
@@ -304,6 +325,9 @@ public class ModBlocksTagsProvider extends FabricTagsProvider.BlockTagsProvider 
         tag(ModTags.Blocks.SPODUMENE_ORES)
                 .add(ModBlocks.getRK(ModBlocks.SPODUMENE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_SPODUMENE_ORE));
+
+        tag(ModTags.Blocks.CROCOITE_ORES)
+                .add(ModBlocks.getRK(ModBlocks.END_STONE_CROCOITE_ORE));
 
         tag(ModTags.Blocks.LUMEL_ORES)
                 .add(ModBlocks.getRK(ModBlocks.NETHER_LUMEL_ORE));

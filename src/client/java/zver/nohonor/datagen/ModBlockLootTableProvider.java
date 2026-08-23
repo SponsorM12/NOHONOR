@@ -95,9 +95,19 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         add(ModBlocks.DEEPSLATE_BAUXITE_ORE, createOreDrop(ModBlocks.DEEPSLATE_BAUXITE_ORE, ModItems.BAUXITE));
         add(ModBlocks.SPODUMENE_ORE, createOreDrop(ModBlocks.SPODUMENE_ORE, ModItems.SPODUMENE));
         add(ModBlocks.DEEPSLATE_SPODUMENE_ORE, createOreDrop(ModBlocks.DEEPSLATE_SPODUMENE_ORE, ModItems.SPODUMENE));
+        add(ModBlocks.END_STONE_CROCOITE_ORE, createOreDrop(ModBlocks.END_STONE_CROCOITE_ORE, ModItems.CROCOITE));
         add(ModBlocks.NETHER_LUMEL_ORE, createOreDrop(ModBlocks.NETHER_LUMEL_ORE, ModItems.RAW_LUMEL));
         add(ModBlocks.NETHER_SHCHERBARUNE_ORE, createOreDrop(ModBlocks.NETHER_SHCHERBARUNE_ORE, ModItems.RAW_SHCHERBARUNE));
         add(ModBlocks.END_STONE_BISMUTH_ORE, createMultipleOreDrops(ModBlocks.END_STONE_BISMUTH_ORE, ModItems.RAW_BISMUTH, 3.0f, 6.0f));
+
+//======================================МЕТАЛЛИЧЕСКИЕ БЛОКИ=========================================
+        dropSelf(ModBlocks.PYRITE_BLOCK);
+        dropSelf(ModBlocks.GLINIY_BLOCK);
+        dropSelf(ModBlocks.TITANIUM_BLOCK);
+        dropSelf(ModBlocks.LUMEL_BLOCK);
+        dropSelf(ModBlocks.KARELITE_BLOCK);
+        dropSelf(ModBlocks.HELLESTEROY_BLOCK);
+        dropSelf(ModBlocks.VIVARIUM_BLOCK);
 
 //============================================САПЛИНГ==============================================
         dropSelf(ModBlocks.HESPERIDES_SAPLING);

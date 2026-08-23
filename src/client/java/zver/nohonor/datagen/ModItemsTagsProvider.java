@@ -100,6 +100,9 @@ public class ModItemsTagsProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModItems.getRK(ModBlocks.SPODUMENE_ORE.asItem()))
                 .add(ModItems.getRK(ModBlocks.DEEPSLATE_SPODUMENE_ORE.asItem()));
 
+        tag(ModTags.Items.CROCOITE_ORES)
+                .add(ModItems.getRK(ModBlocks.END_STONE_CROCOITE_ORE.asItem()));
+
         tag(ModTags.Items.LUMEL_ORES)
                 .add(ModItems.getRK(ModBlocks.NETHER_LUMEL_ORE.asItem()));
 

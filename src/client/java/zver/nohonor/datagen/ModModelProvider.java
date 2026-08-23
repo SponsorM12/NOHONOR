@@ -78,9 +78,19 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(ModBlocks.DEEPSLATE_BAUXITE_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.SPODUMENE_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.DEEPSLATE_SPODUMENE_ORE);
+        blockModelGenerators.createTrivialCube(ModBlocks.END_STONE_CROCOITE_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.NETHER_LUMEL_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.NETHER_SHCHERBARUNE_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.END_STONE_BISMUTH_ORE);
+
+//===========================================МЕТАЛЛИЧЕСКИЕ БЛОКИ========================================
+        blockModelGenerators.createTrivialCube(ModBlocks.PYRITE_BLOCK);
+        blockModelGenerators.createTrivialCube(ModBlocks.GLINIY_BLOCK);
+        blockModelGenerators.createTrivialCube(ModBlocks.TITANIUM_BLOCK);
+        blockModelGenerators.createTrivialCube(ModBlocks.LUMEL_BLOCK);
+        blockModelGenerators.createTrivialCube(ModBlocks.KARELITE_BLOCK);
+        blockModelGenerators.createTrivialCube(ModBlocks.HELLESTEROY_BLOCK);
+        blockModelGenerators.createTrivialCube(ModBlocks.VIVARIUM_BLOCK);
 
 //==============================================ЛАМПЫ================================================
         Identifier KhramovayalampOffIdentifier = TexturedModel.CUBE.create(ModBlocks.KHRAMOVAYA_STONE_LAMP, blockModelGenerators.modelOutput);
@@ -188,6 +198,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.GALENA, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.BAUXITE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.SPODUMENE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.CROCOITE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.BLACK_RESIN_CLUMP, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.PEOV, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.declareCustomModelItem(ModItems.ION_SPHERE);

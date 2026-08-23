@@ -4,7 +4,7 @@ import net.fabricmc.fabric.api.client.rendering.v1.ModelLayerRegistry;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.resources.Identifier;
 import zver.nohonor.NOHONOR;
-import zver.nohonor.client.entity.gnome.GnomeEntityModel;
+import zver.nohonor.client.entity.custom.gnome.GnomeEntityModel;
 
 public class ModEntityModelLayers {
     public static final ModelLayerLocation GNOME = createMain("gnome");

@@ -3,23 +3,23 @@ package zver.nohonor.client;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.ModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.LivingEntityRenderLayerRegistrationCallback;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
+import net.minecraft.client.renderer.entity.FallingBlockRenderer;
 import net.minecraft.client.renderer.entity.player.AvatarRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.ItemStack;
 import zver.nohonor.block.entity.ModBlockEntities;
-import zver.nohonor.block.entity.custom.PedestalBlockEntity;
 import zver.nohonor.client.block.entity.custom.renderer.PedestalBlockEntityRenderer;
 import zver.nohonor.client.entity.ModEntityModelLayers;
 import zver.nohonor.client.entity.boat.ModBoatRenderer;
-import zver.nohonor.client.entity.gnome.GnomeEntityRenderer;
+import zver.nohonor.client.entity.custom.gnome.GnomeEntityRenderer;
 import zver.nohonor.client.avatar_layers.hanahaki.HanahakiModelLayers;
 import zver.nohonor.client.avatar_layers.hanahaki.model.HanahakiModel;
+import zver.nohonor.client.entity.custom.rising_block.RisingBlockRenderer;
 import zver.nohonor.client.hud.tenacity.ModHudElements;
 import zver.nohonor.client.avatar_layers.reflection.ReflectionArmorLayer;
 import zver.nohonor.client.avatar_layers.reflection.ReflectionModelLayers;
@@ -43,6 +43,7 @@ public class NOHONORClient implements ClientModInitializer {
 
 		ModEntityModelLayers.initialize();
 		ModBoatRenderer.initialize();
+		EntityRendererRegistry.register(ModEntityTypes.RISING_BLOCK, RisingBlockRenderer::new);
 		ModelLayerRegistry.registerModelLayer(HanahakiModelLayers.BASE, HanahakiModel::createBaseLayer);//я не уверен что так должно быть
 		ModelLayerRegistry.registerModelLayer(ReflectionModelLayers.SHROUD, ReflectionModel::createBodyLayer);
 				EntityRenderers.register(ModEntityTypes.GNOME, GnomeEntityRenderer::new);// 			и здесь я тоже не уверен что верно сделал

@@ -85,6 +85,10 @@ public class ModItems {
             "spodumene",properties -> new ModTooltipItems("item.nohonor.spodumene.desc", properties),
             new Item.Properties().rarity(Rarity.UNCOMMON));
 
+    public static final Item CROCOITE = registerItem(
+            "crocoite",properties -> new ModTooltipItems("item.nohonor.crocoite.desc", properties),
+            new Item.Properties().rarity(Rarity.UNCOMMON));
+
     public static final Item BLACK_RESIN_CLUMP = registerItem(
             "black_resin_clump",
             properties -> new ModTooltipItems("item.nohonor.black_resin_clump.desc", properties),
@@ -423,6 +427,11 @@ public class ModItems {
             props -> new VivariumItem(MARGUERITE, props),
             new Item.Properties()
                     .fireResistant()
+    );
+
+    public static final Item VIVARIUM_BLOCK_ITEM = registerItem("vivarium_block",
+            props -> new VivariumBlockItem(ModBlocks.VIVARIUM_BLOCK, props),
+            new Item.Properties()
     );
 
     public static final Item RAW_HELLESTEROY = registerItem(

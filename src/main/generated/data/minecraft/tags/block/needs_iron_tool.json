@@ -6,6 +6,8 @@
     "nohonor:bauxite_ore",
     "nohonor:deepslate_bauxite_ore",
     "nohonor:deepslate_pyrite_ore",
-    "nohonor:end_stone_bismuth_ore"
+    "nohonor:pyrite_block",
+    "nohonor:gliniy_block",
+    "nohonor:titanium_block"
   ]
 }

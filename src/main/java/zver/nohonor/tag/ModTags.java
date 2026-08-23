@@ -23,6 +23,7 @@ public class ModTags {
         public static final TagKey<Block> GALENA_ORES = createTag("galena_ores");
         public static final TagKey<Block> BAUXITE_ORES = createTag("bauxite_ores");
         public static final TagKey<Block> SPODUMENE_ORES = createTag("spodumene_ores");
+        public static final TagKey<Block> CROCOITE_ORES = createTag("crocoite_ores");
         public static final TagKey<Block> LUMEL_ORES = createTag("lumel_ores");
         public static final TagKey<Block> SHCHERBARUNE_ORES = createTag("shcherbarune_ores");
         public static final TagKey<Block> BISMUTH_ORES = createTag("bismuth_ores");
@@ -48,6 +49,7 @@ public class ModTags {
         public static final TagKey<Item> GALENA_ORES = createTag("galena_ores");
         public static final TagKey<Item> BAUXITE_ORES = createTag("bauxite_ores");
         public static final TagKey<Item> SPODUMENE_ORES = createTag("spodumene_ores");
+        public static final TagKey<Item> CROCOITE_ORES = createTag("crocoite_ores");
         public static final TagKey<Item> LUMEL_ORES = createTag("lumel_ores");
         public static final TagKey<Item> SHCHERBARUNE_ORES = createTag("shcherbarune_ores");
         public static final TagKey<Item> BISMUTH_ORES = createTag("bismuth_ores");

@@ -1,4 +1,4 @@
-package zver.nohonor.client.entity.gnome;
+package zver.nohonor.client.entity.custom.gnome;
 
 import net.minecraft.client.animation.KeyframeAnimation;
 import net.minecraft.client.model.EntityModel;

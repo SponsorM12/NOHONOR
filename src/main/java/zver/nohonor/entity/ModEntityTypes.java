@@ -10,19 +10,25 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import zver.nohonor.NOHONOR;
+import zver.nohonor.entity.custom.RisingBlockEntity;
 import zver.nohonor.entity.custom.gnome.GnomeEntity;
 
 public class ModEntityTypes {
 
     public static ResourceKey<EntityType<?>> getRK(EntityType<?> entityType) {
         return BuiltInRegistries.ENTITY_TYPE.getResourceKey(entityType).get();
+
     }
+
+    public static final EntityType<RisingBlockEntity> RISING_BLOCK = register(
+            "rising_block",
+            EntityType.Builder.<RisingBlockEntity>of(RisingBlockEntity::new, MobCategory.MISC)
+                    .sized(0.98f, 0.98f));
 
     public static final EntityType<GnomeEntity> GNOME = register(
             "gnome",
             EntityType.Builder.<GnomeEntity>of(GnomeEntity::new, MobCategory.MISC)
-                    .sized(0.5f, 0.75f)
-    );
+                    .sized(0.5f, 0.75f));
 
     private static <T extends Entity> EntityType<T> register(String name, EntityType.Builder<T> builder) {
         ResourceKey<EntityType<?>> key = ResourceKey.create(Registries.ENTITY_TYPE, Identifier.fromNamespaceAndPath(NOHONOR.MOD_ID, name));

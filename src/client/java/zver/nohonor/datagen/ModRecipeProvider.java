@@ -37,13 +37,31 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 //============================================================СМЕЛТАБЛЫ===========================================================
                 //Лист делается для того, чтобы условный raw материал вписать несколько раз
                 List<ItemLike> PYRITE_ORE_SMELTABLES = List.of(ModBlocks.PYRITE_ORE, ModBlocks.DEEPSLATE_PYRITE_ORE);
-                oreSmelting(PYRITE_ORE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.PYRITE, 0.3f, 200, "pyrite");
-                oreBlasting(PYRITE_ORE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.PYRITE, 0.3f, 100, "pyrite");
+                oreSmelting(PYRITE_ORE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.PYRITE, 0.2f, 200, "pyrite");
+                oreBlasting(PYRITE_ORE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.PYRITE, 0.2f, 100, "pyrite");
 
+                List<ItemLike> GALENA_ORE_SMELTABLES = List.of(ModBlocks.GALENA_ORE, ModBlocks.DEEPSLATE_GALENA_ORE);
+                oreSmelting(GALENA_ORE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.GALENA, 0.1f, 200, "galena");
+                oreBlasting(GALENA_ORE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.GALENA, 0.1f, 100, "galena");
+
+                List<ItemLike> BAUXITE_ORE_SMELTABLES = List.of(ModBlocks.BAUXITE_ORE, ModBlocks.DEEPSLATE_BAUXITE_ORE);
+                oreSmelting(BAUXITE_ORE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.BAUXITE, 0.1f, 200, "bauxite");
+                oreBlasting(BAUXITE_ORE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.BAUXITE, 0.1f, 100, "bauxite");
+
+                List<ItemLike> SPODUMENE_ORE_SMELTABLES = List.of(ModBlocks.SPODUMENE_ORE, ModBlocks.DEEPSLATE_SPODUMENE_ORE);
+                oreSmelting(SPODUMENE_ORE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.SPODUMENE, 0.1f, 200, "spodumene");
+                oreBlasting(SPODUMENE_ORE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.SPODUMENE, 0.1f, 100, "spodumene");
+
+                List<ItemLike> CROCOITE_ORE_SMELTABLES = List.of(ModBlocks.END_STONE_CROCOITE_ORE);
+                oreSmelting(CROCOITE_ORE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.SPODUMENE, 0.1f, 200, "crocoite");
+                oreBlasting(CROCOITE_ORE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.SPODUMENE, 0.1f, 100, "crocoite");
+
+                //==========================
                 List<ItemLike> PEARL_SILVER_SMELTABLES = List.of(ModItems.RAW_PEARL_SILVER);
                 oreSmelting(PEARL_SILVER_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.PEARL_SILVER_INGOT, 0.6f, 200, "pearl_sliver");
                 oreBlasting(PEARL_SILVER_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.PEARL_SILVER_INGOT, 0.6f, 100, "pearl_sliver");
 
+                //==========================
                 List<ItemLike> LUMEL_SMELTABLES = List.of(ModItems.RAW_LUMEL);
                 List<ItemLike> LUMEL_ORE_SMELTABLES = List.of(ModBlocks.NETHER_LUMEL_ORE);
                 oreSmelting(LUMEL_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.LUMEL_INGOT, 0.25f, 200, "lumel");
@@ -65,7 +83,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 oreSmelting(BISMUTH_ORE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.BISMUTH, 0.1f, 100, "bismuth");
                 oreBlasting(BISMUTH_ORE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.BISMUTH, 0.1f, 100, "bismuth");
 
-                //надо разобраться, что за Рецепт Кадегорий
                 //nineBlockStorageRecipes(RecipeCategory.MISC, ModItems.DISC_FRAGMENT_LOST_MY_PIECES, RecipeCategory.BUILDING_BLOCKS, ModItems.MUSIC_DISC_LOST_MY_PIECES);
 
                 shapeless(RecipeCategory.MISC, ModItems.MUSIC_DISC_LOST_MY_PIECES, 1)
@@ -252,6 +269,80 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         ModItems.STAR_IRON_NUGGET,       //маленький предмет
                         RecipeCategory.MISC,             //категория большого (при 9 в 1(может быть и блок))
                         ModItems.STAR_IRON_INGOT         //большой предмет
+                );
+
+                //металлические блоки
+                nineBlockStorageRecipes(
+                        RecipeCategory.MISC,             //категория маленького (при 1 в 9)
+                        ModItems.PYRITE,                //маленький предмет
+                        RecipeCategory.BUILDING_BLOCKS, //категория большого (при 9 в 1(может быть и блок))
+                        ModBlocks.PYRITE_BLOCK          //большой предмет
+                );
+
+                nineBlockStorageRecipes(
+                        RecipeCategory.MISC,
+                        ModItems.GLINIY_INGOT,
+                        RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.GLINIY_BLOCK,
+                        "gliniy_block",
+                        "gliniy_ingot",
+                        "gliniy_ingot_from_block",
+                        "gliniy_block"
+                );
+
+                nineBlockStorageRecipes(
+                        RecipeCategory.MISC,
+                        ModItems.TITANIUM_INGOT,
+                        RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.TITANIUM_BLOCK,
+                        "titanium_block",
+                        "titanium_ingot",
+                        "titanium_ingot_from_block",
+                        "titanium_block"
+                );
+
+                nineBlockStorageRecipes(
+                        RecipeCategory.MISC,
+                        ModItems.LUMEL_INGOT,
+                        RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.LUMEL_BLOCK,
+                        "lumel_block",
+                        "lumel_ingot",
+                        "lumel_ingot_from_block",
+                        "lumel_block"
+                );
+
+                nineBlockStorageRecipes(
+                        RecipeCategory.MISC,
+                        ModItems.KARELITE_INGOT,
+                        RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.KARELITE_BLOCK,
+                        "karelite_block",
+                        "karelite_ingot",
+                        "karelite_ingot_from_block",
+                        "karelite_block"
+                );
+
+                nineBlockStorageRecipes(
+                        RecipeCategory.MISC,
+                        ModItems.HELLESTEROY_INGOT,
+                        RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.HELLESTEROY_BLOCK,
+                        "hellesteroy_block",
+                        "hellesteroy_ingot",
+                        "hellesteroy_ingot_from_block",
+                        "hellesteroy_block"
+                );
+
+                nineBlockStorageRecipes(
+                        RecipeCategory.MISC,
+                        ModItems.VIVARIUM_INGOT,
+                        RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.VIVARIUM_BLOCK,
+                        "vivarium_block",
+                        "vivarium_ingot",
+                        "vivarium_ingot_from_block",
+                        "vivarium_block"
                 );
 
 //=========================================КРАФТЫ ГЕСПЕРИДЫ===========================================================

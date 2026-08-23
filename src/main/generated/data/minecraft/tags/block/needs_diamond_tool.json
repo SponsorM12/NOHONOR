@@ -2,7 +2,13 @@
   "values": [
     "nohonor:spodumene_ore",
     "nohonor:deepslate_spodumene_ore",
+    "nohonor:end_stone_crocoite_ore",
     "nohonor:nether_lumel_ore",
-    "nohonor:nether_shcherbarune_ore"
+    "nohonor:nether_shcherbarune_ore",
+    "nohonor:end_stone_bismuth_ore",
+    "nohonor:lumel_block",
+    "nohonor:karelite_block",
+    "nohonor:hellesteroy_block",
+    "nohonor:vivarium_block"
   ]
 }

@@ -220,9 +220,20 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.DEEPSLATE_BAUXITE_ORE.asItem());
                 output.accept(ModBlocks.SPODUMENE_ORE.asItem());
                 output.accept(ModBlocks.DEEPSLATE_SPODUMENE_ORE.asItem());
+                output.accept(ModBlocks.END_STONE_CROCOITE_ORE.asItem());
                 output.accept(ModBlocks.NETHER_LUMEL_ORE.asItem());
                 output.accept(ModBlocks.NETHER_SHCHERBARUNE_ORE.asItem());
                 output.accept(ModBlocks.END_STONE_BISMUTH_ORE.asItem());
+
+                //=================МЕТАЛЛИЧЕСКИЕ БЛОКИ================
+                output.accept(ModBlocks.PYRITE_BLOCK.asItem());
+                output.accept(ModBlocks.GLINIY_BLOCK.asItem());
+                output.accept(ModBlocks.TITANIUM_BLOCK.asItem());
+                output.accept(ModBlocks.LUMEL_BLOCK.asItem());
+                output.accept(ModBlocks.KARELITE_BLOCK.asItem());
+                output.accept(ModBlocks.HELLESTEROY_BLOCK.asItem());
+                //output.accept(ModBlocks.VIVARIUM_BLOCK.asItem());
+                output.accept(ModItems.VIVARIUM_BLOCK_ITEM);
 
                 //=========ДЕРЕВЯННЫЕ БЛОКИ И ПРОИЗВОДНЫЕ============
                 output.accept(ModBlocks.HESPERIDES_SAPLING.asItem());

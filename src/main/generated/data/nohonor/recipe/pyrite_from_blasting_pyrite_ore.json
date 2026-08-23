@@ -1,6 +1,6 @@
 {
   "type": "minecraft:blasting",
-  "experience": 0.3,
+  "experience": 0.2,
   "group": "pyrite",
   "ingredient": "nohonor:pyrite_ore",
   "result": {
