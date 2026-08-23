@@ -1,4 +1,4 @@
-package zver.nohonor.custom_mechanics.reflection;
+package zver.nohonor.custom_mechanics.avatar_layers.reflection;
 
 public interface ReflectionData {
 

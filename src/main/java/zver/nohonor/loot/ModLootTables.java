@@ -1,9 +1,4 @@
-package zver.nohonor.init;
-
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.Identifier;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.level.storage.loot.LootTable;
+package zver.nohonor.loot;
 
 public class ModLootTables {
     // Своя таблица для кастомного сундука мода

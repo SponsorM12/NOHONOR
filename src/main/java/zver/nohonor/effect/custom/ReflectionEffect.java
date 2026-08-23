@@ -6,7 +6,7 @@ import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import zver.nohonor.custom_mechanics.reflection.ReflectionData;
+import zver.nohonor.custom_mechanics.avatar_layers.reflection.ReflectionData;
 
 public class ReflectionEffect extends MobEffect {
     //Механика отскока доступна любому LivingEntity (см. EntityReflectionDeflectMixin).

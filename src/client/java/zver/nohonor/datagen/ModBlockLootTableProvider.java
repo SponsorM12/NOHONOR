@@ -80,6 +80,9 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.DARK_CUT_KHRAMOVAYA_STONE);
         dropSelf(ModBlocks.DARK_KHRAMOVAYA_STONE_LAMP);
 
+
+        dropSelf(ModBlocks.PEDESTAL);
+
 //=============================================КАМЕНЬ============================================
         dropSelf(ModBlocks.KHRAMOVAYA_STONE);
 

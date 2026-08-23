@@ -67,6 +67,12 @@ public class ModPotionRecipes {
             builder.registerPotionRecipe(ModPotions.REFLECTION_POTION, Ingredient.of(Items.GLOWSTONE), ModPotions.STRONG_REFLECTION_POTION);
             builder.registerPotionRecipe(ModPotions.STRONG_REFLECTION_POTION, Ingredient.of(ModItems.DISENTGILIL), ModPotions.ABSURD_REFLECTION_POTION);
 
+            //================================================ЗАПРЕТ ПРЫЖКА======================================================
+            builder.registerPotionRecipe(Potions.LEAPING, Ingredient.of(Items.FERMENTED_SPIDER_EYE), ModPotions.NO_JUMP);
+            builder.registerPotionRecipe(Potions.STRONG_LEAPING, Ingredient.of(Items.FERMENTED_SPIDER_EYE), ModPotions.LONG_NO_JUMP);
+            builder.registerPotionRecipe(Potions.LONG_LEAPING, Ingredient.of(Items.FERMENTED_SPIDER_EYE), ModPotions.LONG_NO_JUMP);
+            builder.registerPotionRecipe(ModPotions.NO_JUMP, Ingredient.of(Items.REDSTONE), ModPotions.LONG_NO_JUMP);
+
         });
     }
 

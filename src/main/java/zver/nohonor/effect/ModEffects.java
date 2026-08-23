@@ -40,7 +40,7 @@ public class ModEffects extends MobEffects {
             new CurseEffect(MobEffectCategory.HARMFUL, 0x393939));//Eclipse
 
     public static final Holder<MobEffect> NO_FLY_WEATHER = registerMobEffect("no_fly_weather",
-            new NonFlyWeatherEffect(MobEffectCategory.HARMFUL, 0xC29A9B));//Careys Pink
+            new NoFlyWeatherEffect(MobEffectCategory.HARMFUL, 0xC29A9B));//Careys Pink
 
     public static final Holder<MobEffect> DISARM = registerMobEffect("disarm",
             new DisarmEffect(MobEffectCategory.HARMFUL, 0x444444));//Charcoal
@@ -65,6 +65,12 @@ public class ModEffects extends MobEffects {
 
      public static final Holder<MobEffect> GREEK_FIRE = registerMobEffect("greek_fire",
             new GreekFireEffect(MobEffectCategory.HARMFUL, 0xFFFC4F));//Paris Daisy
+
+    public static final Holder<MobEffect> NO_JUMP = registerMobEffect("no_jump",
+            new NoJump(MobEffectCategory.HARMFUL, 0x1AAAA7));//Light Sea Green
+
+    public static final Holder<MobEffect> NO_TELEPORT = registerMobEffect("no_teleport",
+            new NoTeleportEffect(MobEffectCategory.HARMFUL, 0x00776B));//Pine Green
 
     private static Holder<MobEffect> registerMobEffect(String name, MobEffect effect) {
         return Registry.registerForHolder(BuiltInRegistries.MOB_EFFECT, Identifier.fromNamespaceAndPath(NOHONOR.MOD_ID, name), effect);

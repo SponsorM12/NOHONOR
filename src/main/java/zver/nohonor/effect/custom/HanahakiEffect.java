@@ -6,8 +6,8 @@ import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import zver.nohonor.custom_mechanics.hanahaki.HanahakiData;
-import zver.nohonor.custom_mechanics.hanahaki.HanahakiVariants;
+import zver.nohonor.custom_mechanics.avatar_layers.hanahaki.HanahakiData;
+import zver.nohonor.custom_mechanics.avatar_layers.hanahaki.HanahakiVariants;
 
 public class HanahakiEffect extends MobEffect {
     //Чисто косметический эффект. Никакой игровой логики — только выбор варианта цветка.

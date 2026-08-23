@@ -1,4 +1,4 @@
-package zver.nohonor.custom_mechanics.hanahaki;
+package zver.nohonor.custom_mechanics.avatar_layers.hanahaki;
 
 import net.minecraft.util.RandomSource;
 

@@ -6,10 +6,15 @@ import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.client.rendering.v1.ModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.LivingEntityRenderLayerRegistrationCallback;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
+import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.entity.player.AvatarRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
+import zver.nohonor.block.entity.ModBlockEntities;
+import zver.nohonor.block.entity.custom.PedestalBlockEntity;
+import zver.nohonor.client.block.entity.custom.renderer.PedestalBlockEntityRenderer;
 import zver.nohonor.client.entity.ModEntityModelLayers;
 import zver.nohonor.client.entity.boat.ModBoatRenderer;
 import zver.nohonor.client.entity.gnome.GnomeEntityRenderer;
@@ -32,6 +37,8 @@ public class NOHONORClient implements ClientModInitializer {
 		//          |
 		//         \|/
 		// Эта точка входа подходит для настройки логики, специфичной для клиента, например, для рендеринга.
+		BlockEntityRenderers.register(ModBlockEntities.PEDESTAL_BE, PedestalBlockEntityRenderer::new);
+
 		ModParticleFactories.initialize();
 
 		ModEntityModelLayers.initialize();

@@ -31,6 +31,12 @@
 		"effect.reflection.PlayerReflectionMixin",
 		"effect.greekfire.GreekFireExtinguishMixin",
 		"effect.greekfire.GreekFireDamageMixin",
+		"effect.no_jump.LivingEntityNoJumpMixin",
+		"effect.no_teleport.LivingEntityNoTeleportMixin",
+		"effect.no_teleport.ShulkerNoTeleportMixin",
+		"effect.no_teleport.ThrownEnderpearlNoTeleportMixin",
+		"effect.no_teleport.EntityNoTeleportPortalMixin",
+		"effect.no_teleport.TamableAnimalNoTeleportMixin",
 
 		"damage_type.LivingEntityPureDamageMixin",
 

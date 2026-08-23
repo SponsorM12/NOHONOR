@@ -17,6 +17,8 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_PEARL_SILVER_TOOL = createTag("needs_pearl_silver_tool");
         public static final TagKey<Block> INCORRECT_FOR_PEARL_SILVER_TOOL = createTag("incorrect_for_pearl_silver_tool");
 
+        public static final TagKey<Block> PLUSHE = createTag("plushe");
+
         public static final TagKey<Block> PYRITE_ORES = createTag("pyrite_ores");
         public static final TagKey<Block> GALENA_ORES = createTag("galena_ores");
         public static final TagKey<Block> BAUXITE_ORES = createTag("bauxite_ores");

@@ -599,6 +599,40 @@ public class ModPotions {
                     true
             )));
 
+//======================================ЗАПРЕТ ПРЫЖКА=============================================
+    public static final Holder<Potion> NO_JUMP = registerPotion("no_jump",
+            new Potion("no_jump", new MobEffectInstance(ModEffects.NO_JUMP,
+                    160,
+                    0,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> LONG_NO_JUMP = registerPotion("long_no_jump",
+            new Potion("long_no_jump", new MobEffectInstance(ModEffects.NO_JUMP,
+                    320,
+                    0,
+                    true,
+                    true
+            )));
+
+    //======================================ЗАПРЕТ ПРЫЖКА=============================================
+    public static final Holder<Potion> NO_TELEPORT = registerPotion("no_teleport",
+            new Potion("no_teleport", new MobEffectInstance(ModEffects.NO_TELEPORT,
+                    460,
+                    0,
+                    true,
+                    true
+            )));
+
+    public static final Holder<Potion> LONG_NO_TELEPORT = registerPotion("long_no_teleport",
+            new Potion("long_no_teleport", new MobEffectInstance(ModEffects.NO_TELEPORT,
+                    920,
+                    0,
+                    true,
+                    true
+            )));
+
 //============================================================================================================
 //===========================================ИНИЦИАЛИЗАЦИЯ РЕГИСТРАЦИЯ========================================
     private static Holder<Potion> registerPotion(String name, Potion potion) {

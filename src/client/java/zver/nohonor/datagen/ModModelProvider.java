@@ -66,6 +66,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.family(ModBlocks.DARK_POLISHED_KHRAMOVAYA_STONE_BRICKS)
                 .generateFor(ModBlocks.DARK_POLISHED_KHRAMOVAYA_STONE_BRICKS_FAMILY);
 
+        //ПЪЕДЕСТАЛ
+        blockModelGenerators.createNonTemplateModelBlock(ModBlocks.PEDESTAL);
+
 //================================================РУДЫ=============================================
         blockModelGenerators.createTrivialCube(ModBlocks.PYRITE_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.DEEPSLATE_PYRITE_ORE);

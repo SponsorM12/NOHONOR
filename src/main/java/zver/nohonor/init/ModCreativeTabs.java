@@ -209,6 +209,8 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.DARK_CUT_KHRAMOVAYA_STONE.asItem());
                 output.accept(ModBlocks.DARK_KHRAMOVAYA_STONE_LAMP.asItem());
 
+                output.accept(ModBlocks.PEDESTAL.asItem());
+
                 //====================РУДЫ===========================
                 output.accept(ModBlocks.PYRITE_ORE.asItem());
                 output.accept(ModBlocks.DEEPSLATE_PYRITE_ORE.asItem());

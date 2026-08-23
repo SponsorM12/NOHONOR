@@ -77,6 +77,8 @@ public class ModBlocksTagsProvider extends FabricTagsProvider.BlockTagsProvider 
                 .add(ModBlocks.getRK(ModBlocks.DARK_POLISHED_KHRAMOVAYA_STONE_BRICKS_WALL))
                 .add(ModBlocks.getRK(ModBlocks.DARK_CUT_KHRAMOVAYA_STONE))
 
+                .add(ModBlocks.getRK(ModBlocks.PEDESTAL))
+
                 .add(ModBlocks.getRK(ModBlocks.PYRITE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_PYRITE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.GALENA_ORE))
@@ -280,6 +282,11 @@ public class ModBlocksTagsProvider extends FabricTagsProvider.BlockTagsProvider 
 
         tag(BlockTags.BEE_ATTRACTIVE)
                 .add(ModBlocks.getRK(ModBlocks.GOLDEN_PETALS));
+
+//=============================ПЛЮШЕВЫЙ=================================
+        tag(ModTags.Blocks.PLUSHE)
+                .add(ModBlocks.getRK(ModBlocks.PLUSHE_SHARK))
+                .add(ModBlocks.getRK(ModBlocks.PLUSHE_WHALE));
 
 //=============================РУДЫ БЛОКИ==================================
         tag(ModTags.Blocks.PYRITE_ORES)

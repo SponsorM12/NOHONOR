@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import zver.nohonor.client.avatar_layers.hanahaki.HanahakiRenderStateAccessor;
-import zver.nohonor.custom_mechanics.hanahaki.HanahakiData;
+import zver.nohonor.custom_mechanics.avatar_layers.hanahaki.HanahakiData;
 
 @Mixin(AvatarRenderer.class)
 public abstract class AvatarRendererMixin {

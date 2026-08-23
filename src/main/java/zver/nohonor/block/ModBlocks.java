@@ -25,6 +25,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import zver.nohonor.block.custom.*;
+import zver.nohonor.block.custom.pedestal.PedestalBlock;
 import zver.nohonor.block.custom.plush.PlushBlocks;
 import zver.nohonor.fluid.ModFluids;
 import zver.nohonor.item.ModItems;
@@ -430,6 +431,13 @@ public class ModBlocks {
                     .slab(ModBlocks.DARK_POLISHED_KHRAMOVAYA_STONE_BRICKS_SLAB)
                     .wall(ModBlocks.DARK_POLISHED_KHRAMOVAYA_STONE_BRICKS_WALL)
                     .getFamily();
+
+    public static final Block PEDESTAL = register(
+            "pedestal",
+            properties -> new PedestalBlock(properties),
+            BlockBehaviour.Properties.ofFullCopy(KHRAMOVAYA_STONE),
+            true
+    );
 
 //=====================================================РУДЫ======================================================
 //КОЛЧЕДАН

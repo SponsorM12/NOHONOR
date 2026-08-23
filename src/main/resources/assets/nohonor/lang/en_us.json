@@ -227,6 +227,7 @@
   "block.nohonor.dark_polished_khramovaya_stone_bricks_wall": "Dark Polished Khramovaya Stone Bricks Wall",
   "block.nohonor.dark_cut_khramovaya_stone": "Dark Cut Khramovaya Stone",
   "block.nohonor.dark_khramovaya_stone_lamp": "Dark Khramovaya Stone Lamp",
+  "block.nohonor.pedestal": "Pedestal",
 
   "block.nohonor.pyrite_ore": "Pyrite Ore",
   "block.nohonor.deepslate_pyrite_ore": "Deepslate Pyrite Ore",
@@ -333,6 +334,10 @@
   "effect.nohonor.reflection.description": "Reflects any projectiles",
   "effect.nohonor.greek_fire": "Greek Fire",
   "effect.nohonor.greek_fire.description": "The fire cannot be extinguished",
+  "effect.nohonor.no_jump": "No Jump",
+  "effect.nohonor.no_jump.description": "You can't jump",
+  "effect.nohonor.no_teleport": "No Teleport",
+  "effect.nohonor.no_teleport.description": "You can't teleport",
 
   "item.minecraft.potion.effect.long_luck": "Potion of Luck",
   "item.minecraft.potion.effect.strong_luck": "Potion of Luck",
@@ -639,6 +644,24 @@
   "item.minecraft.tipped_arrow.effect.long_reflection": "Arrow of Reflection",
   "item.minecraft.tipped_arrow.effect.strong_reflection": "Arrow of Reflection",
   "item.minecraft.tipped_arrow.effect.absurd_reflection": "Arrow of Reflection",
+
+  "item.minecraft.potion.effect.no_jump": "Potion of No Jump",
+  "item.minecraft.potion.effect.long_no_jump": "Potion of No Jump",
+  "item.minecraft.splash_potion.effect.no_jump": "Splash Potion of No Jump",
+  "item.minecraft.splash_potion.effect.long_no_jump": "Splash Potion of No Jump",
+  "item.minecraft.lingering_potion.effect.no_jump": "Lingering Potion of No Jump",
+  "item.minecraft.lingering_potion.effect.long_no_jump": "Lingering Potion of No Jump",
+  "item.minecraft.tipped_arrow.effect.no_jump": "Arrow of No Jump",
+  "item.minecraft.tipped_arrow.effect.long_no_jump": "Arrow of No Jump",
+
+  "item.minecraft.potion.effect.no_teleport": "Potion of No Teleport",
+  "item.minecraft.potion.effect.long_no_teleport": "Potion of No Teleport",
+  "item.minecraft.splash_potion.effect.no_teleport": "Splash Potion of No Teleport",
+  "item.minecraft.splash_potion.effect.long_no_teleport": "Splash Potion of No Teleport",
+  "item.minecraft.lingering_potion.effect.no_teleport": "Lingering Potion of No Teleport",
+  "item.minecraft.lingering_potion.effect.long_no_teleport": "Lingering Potion of No Teleport",
+  "item.minecraft.tipped_arrow.effect.no_teleport": "Arrow of No Teleport",
+  "item.minecraft.tipped_arrow.effect.long_no_teleport": "Arrow of No Teleport",
 
   "painting.nohonor.anger.title": "Anger",
   "painting.nohonor.anger.author": "Mr. Sponsor",
