@@ -2,7 +2,6 @@ package zver.nohonor;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import zver.nohonor.block.ModBlocks;
@@ -17,9 +16,11 @@ import zver.nohonor.fluid.ModFluids;
 import zver.nohonor.init.*;
 import zver.nohonor.item.ModItems;
 import zver.nohonor.loot.ModLootTableModifiers;
+import zver.nohonor.menu.ModMenuTypes;
 import zver.nohonor.networking.ModPackets;
 import zver.nohonor.particle.ModParticles;
 import zver.nohonor.potion.ModPotions;
+import zver.nohonor.recipe.ModRecipes;
 import zver.nohonor.sound.ModSounds;
 import zver.nohonor.stat.ModStats;
 
@@ -74,7 +75,10 @@ public class NOHONOR implements ModInitializer {
 		ModLootTableModifiers.initialize();
 
 		ModPackets.initialize();
+
 		ModBlockEntities.initialize();
+
+		ModRecipes.initialize();
 
 		//Класс попадает в onInitialize() явным вызовом,
 		// если у него есть либо: 1. собственные static-поля с регистрацией,

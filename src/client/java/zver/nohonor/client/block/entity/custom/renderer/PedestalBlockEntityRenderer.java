@@ -12,9 +12,8 @@ import net.minecraft.client.renderer.state.level.CameraRenderState;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.phys.Vec3;
-import org.joml.Vector3f;
 import org.jspecify.annotations.Nullable;
-import zver.nohonor.block.entity.custom.PedestalBlockEntity;
+import zver.nohonor.block.entity.custom.pedestal.PedestalBlockEntity;
 
 public class PedestalBlockEntityRenderer implements BlockEntityRenderer<PedestalBlockEntity, PedestalBlockEntityRenderState> {
 

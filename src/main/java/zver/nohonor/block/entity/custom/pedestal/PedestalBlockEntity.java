@@ -1,4 +1,4 @@
-package zver.nohonor.block.entity.custom;
+package zver.nohonor.block.entity.custom.pedestal;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;

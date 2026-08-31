@@ -7,8 +7,8 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.ModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.LivingEntityRenderLayerRegistrationCallback;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
-import net.minecraft.client.renderer.entity.FallingBlockRenderer;
 import net.minecraft.client.renderer.entity.player.AvatarRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.network.chat.Component;
@@ -25,6 +25,8 @@ import zver.nohonor.client.avatar_layers.reflection.ReflectionArmorLayer;
 import zver.nohonor.client.avatar_layers.reflection.ReflectionModelLayers;
 import zver.nohonor.client.avatar_layers.reflection.model.ReflectionModel;
 import zver.nohonor.client.keymapping.ModKeyMappings;
+import zver.nohonor.client.menu.custom.arc_crucible.ArcCrucibleScreen;
+import zver.nohonor.menu.ModMenuTypes;
 import zver.nohonor.entity.ModEntityTypes;
 import zver.nohonor.networking.packet.ModPayloadC2S;
 import zver.nohonor.particle.ModParticleFactories;
@@ -57,6 +59,9 @@ public class NOHONORClient implements ClientModInitializer {
 		ModHudElements.initialize();
 
 		ModKeyMappings.initialize();
+
+		ModMenuTypes.initialize();
+		MenuScreens.register(ModMenuTypes.ARC_CRUCIBLE_MENU, ArcCrucibleScreen::new);
 
 		ClientTickEvents.END_CLIENT_TICK.register(NOHONORClient::onEndTick);
 

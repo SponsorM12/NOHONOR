@@ -55,7 +55,7 @@ public class ModEffects extends MobEffects {
             new GiantEffect(MobEffectCategory.BENEFICIAL, 0x805525));//Hot Curry
 
     public static final Holder<MobEffect> THUMBELINA = registerMobEffect("thumbelina",
-            new ThumbelinaEffect(MobEffectCategory.BENEFICIAL, 0xBB4269));//Royal Heath
+            new ThumbelinaEffect(MobEffectCategory.BENEFICIAL, 0xADD8FF));//Pale Cornflower Blue ;0xBB4269 - Royal Heath
 
     public static final Holder<MobEffect> FRAGILITY = registerMobEffect("fragility",
             new FragilityEffect(MobEffectCategory.HARMFUL, 0xB6B9C0));//Echo Blue

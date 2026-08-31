@@ -18,7 +18,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jspecify.annotations.Nullable;
-import zver.nohonor.block.entity.custom.PedestalBlockEntity;
+import zver.nohonor.block.entity.custom.pedestal.PedestalBlockEntity;
 
 public class PedestalBlock extends BaseEntityBlock {
     public static final VoxelShape SHAPE = Block.box(2, 0, 2, 14, 12, 14);

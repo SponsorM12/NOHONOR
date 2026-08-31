@@ -38,6 +38,7 @@ public class ModCreativeTabs {
                 output.accept(ModItems.GALENA);
                 output.accept(ModItems.BAUXITE);
                 output.accept(ModItems.SPODUMENE);
+                output.accept(ModItems.CROCOITE);
                 output.accept(ModItems.LOTUS);
                 output.accept(ModItems.FRUM_FRUM);
                 output.accept(ModItems.ALCOHOL);
@@ -210,6 +211,9 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.DARK_KHRAMOVAYA_STONE_LAMP.asItem());
 
                 output.accept(ModBlocks.PEDESTAL.asItem());
+
+                //==================СТАНКИ=========================
+                output.accept(ModBlocks.ARC_CRUCIBLE.asItem());
 
                 //====================РУДЫ===========================
                 output.accept(ModBlocks.PYRITE_ORE.asItem());

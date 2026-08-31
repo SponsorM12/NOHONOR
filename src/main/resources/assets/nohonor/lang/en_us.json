@@ -250,7 +250,8 @@
   "block.nohonor.lumel_block": "Lumel Block",
   "block.nohonor.karelite_block": "Karelite Block",
   "block.nohonor.hellesteroy_block": "Hellesteroy Block",
-  "item.nohonor.vivarium_block_item": "Vivarium Block",
+  "block.nohonor.vivarium_block": "Vivarium Block",
+  "item.nohonor.vivarium_block": "Vivarium Block",
 
   "block.nohonor.hesperides_sapling": "Hesperides Sapling",
   "block.nohonor.hesperides_leaves": "Hesperides Leaves",
@@ -272,7 +273,9 @@
   "item.nohonor.hesperides_hanging_sign": "Hesperides Hanging Sign",
   "block.nohonor.golden_petals": "Golden Petals",
 
-  "entity.nohonor.rising_block_type":"Falling %s",
+  "block.nohonor.arc_crucible": "Arc-Crucible",
+
+  "entity.nohonor.rising_block_type":"Rising %s",
 
   "entity.nohonor.hesperides_boat": "Hesperides Boat",
   "item.nohonor.hesperides_boat": "Hesperides Boat",

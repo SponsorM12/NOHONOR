@@ -79,6 +79,8 @@ public class ModBlocksTagsProvider extends FabricTagsProvider.BlockTagsProvider 
 
                 .add(ModBlocks.getRK(ModBlocks.PEDESTAL))
 
+                .add(ModBlocks.getRK(ModBlocks.ARC_CRUCIBLE))
+
                 .add(ModBlocks.getRK(ModBlocks.PYRITE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_PYRITE_ORE))
                 .add(ModBlocks.getRK(ModBlocks.GALENA_ORE))
@@ -141,6 +143,14 @@ public class ModBlocksTagsProvider extends FabricTagsProvider.BlockTagsProvider 
                 .add(ModBlocks.getRK(ModBlocks.LUMEL_BLOCK))
                 //.add(ModBlocks.getRK(ModBlocks.SHCHERBARUNE_BLOCK))
                 //сплавы всех порядоков
+                .add(ModBlocks.getRK(ModBlocks.KARELITE_BLOCK))
+                .add(ModBlocks.getRK(ModBlocks.HELLESTEROY_BLOCK))
+                .add(ModBlocks.getRK(ModBlocks.VIVARIUM_BLOCK));
+
+        tag(BlockTags.BEACON_BASE_BLOCKS)
+                .add(ModBlocks.getRK(ModBlocks.GLINIY_BLOCK))
+                .add(ModBlocks.getRK(ModBlocks.TITANIUM_BLOCK))
+                .add(ModBlocks.getRK(ModBlocks.LUMEL_BLOCK))
                 .add(ModBlocks.getRK(ModBlocks.KARELITE_BLOCK))
                 .add(ModBlocks.getRK(ModBlocks.HELLESTEROY_BLOCK))
                 .add(ModBlocks.getRK(ModBlocks.VIVARIUM_BLOCK));

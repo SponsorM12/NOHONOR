@@ -69,6 +69,10 @@ public class ModModelProvider extends FabricModelProvider {
         //ПЪЕДЕСТАЛ
         blockModelGenerators.createNonTemplateModelBlock(ModBlocks.PEDESTAL);
 
+        //АРК
+        //blockModelGenerators.createHorizontallyRotatedBlock(ModBlocks.ARC_CRUCIBLE, TexturedModel.ORIENTABLE);
+        blockModelGenerators.createFurnace(ModBlocks.ARC_CRUCIBLE, TexturedModel.ORIENTABLE);
+
 //================================================РУДЫ=============================================
         blockModelGenerators.createTrivialCube(ModBlocks.PYRITE_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.DEEPSLATE_PYRITE_ORE);

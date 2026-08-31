@@ -4,7 +4,6 @@ import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.data.BlockFamilies;
 import net.minecraft.data.BlockFamily;
-import net.minecraft.references.BlockItemIds;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.world.item.HangingSignItem;
 import net.minecraft.world.item.SignItem;
@@ -31,9 +30,9 @@ import zver.nohonor.block.custom.lumel_block.LumelBlock;
 import zver.nohonor.block.custom.pedestal.PedestalBlock;
 import zver.nohonor.block.custom.plush.PlushBlocks;
 import zver.nohonor.block.custom.vivarium_block.VivariumBlock;
+import zver.nohonor.block.custom.arc.ArcCrucibleBlock;
 import zver.nohonor.fluid.ModFluids;
 import zver.nohonor.item.ModItems;
-import zver.nohonor.item.special.custom.HellesteroyItem;
 import zver.nohonor.tag.ModTags;
 import zver.nohonor.world.tree.ModTreeGrowers;
 
@@ -1071,7 +1070,24 @@ public class ModBlocks {
                     .noCollision()
                     .instabreak(),
               true
-);
+    );
+
+//==============================================================================================================
+//========================================КАСТОМНЫЕ СТАНКИ======================================================
+//=============================================================================================================
+    public static final Block ARC_CRUCIBLE = register(
+            "arc_crucible",
+        properties -> new ArcCrucibleBlock(properties),
+        BlockBehaviour.Properties.of()
+                .sound(SoundType.STONE)
+                .strength(3.0f, 5.0f),
+    true
+    );
+
+
+//=============================================================================================================
+//=============================================================================================================
+//=============================================================================================================
 
 //===================================================КРОПС=======================================================
     public static final Block MERCURILLIA_CROP = register(
@@ -1083,7 +1099,7 @@ public class ModBlocks {
                 .noCollision()
                 .pushReaction(PushReaction.DESTROY),
         false
-);
+    );
 
     public static final Block BEAN_CROP = register(
             "bean_crop",
