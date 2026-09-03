@@ -27,11 +27,11 @@ public class ArcCrucibleRecipeBuilder implements RecipeBuilder {
         this.ingredient = ingredient;
     }
 
-    public static ArcCrucibleRecipeBuilder crystallizerRecipe(RecipeCategory category, Ingredient ingredient, ItemLike item, int count) {
+    public static ArcCrucibleRecipeBuilder arcProcessRecipe(RecipeCategory category, Ingredient ingredient, ItemLike item, int count) {
         return new ArcCrucibleRecipeBuilder(category, ingredient, new ItemStackTemplate(item.asItem(), count));
     }
 
-    public static ArcCrucibleRecipeBuilder crystallizerRecipe(RecipeCategory category, Ingredient ingredient, ItemLike item) {
+    public static ArcCrucibleRecipeBuilder arcProcessRecipe(RecipeCategory category, Ingredient ingredient, ItemLike item) {
         return new ArcCrucibleRecipeBuilder(category, ingredient, new ItemStackTemplate(item.asItem()));
     }
 

@@ -1,8 +1,0 @@
-{
-  "type": "nohonor:ark_crucible_process",
-  "ingredient": "nohonor:crocoite",
-  "result": {
-    "count": 3,
-    "id": "nohonor:raw_chromium"
-  }
-}

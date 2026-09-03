@@ -16,6 +16,7 @@ import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 import zver.nohonor.NOHONOR;
 import zver.nohonor.block.ModBlocks;
+import zver.nohonor.datagen.recipe.ArcCrucibleRecipeBuilder;
 import zver.nohonor.entity.boat.ModBoats;
 import zver.nohonor.item.ModItems;
 import zver.nohonor.tag.ModTags;
@@ -807,6 +808,52 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(ModItems.PEARL_SILVER_INGOT), has(ModItems.PEARL_SILVER_INGOT))
                         .group("pearl_silver")
                         .save(output);
+
+//========================================================СТАНКИ===========================================================
+                //Арк Горнило
+                ArcCrucibleRecipeBuilder.arcProcessRecipe(RecipeCategory.MISC, Ingredient.of(ModItems.BAUXITE), ModItems.RAW_TITANIUM, 2)
+                        .unlockedBy(getHasName(ModItems.BAUXITE), has(ModItems.BAUXITE))
+                        .save(output, "nohonor:bauxite_item_melting_from_arc_process");
+
+                ArcCrucibleRecipeBuilder.arcProcessRecipe(RecipeCategory.MISC, Ingredient.of(ModBlocks.BAUXITE_ORE), ModItems.RAW_TITANIUM, 2)
+                        .unlockedBy(getHasName(ModBlocks.BAUXITE_ORE), has(ModBlocks.BAUXITE_ORE))
+                        .save(output, "nohonor:bauxite_block_melting_from_arc_process");
+
+                ArcCrucibleRecipeBuilder.arcProcessRecipe(RecipeCategory.MISC, Ingredient.of(ModBlocks.DEEPSLATE_BAUXITE_ORE), ModItems.RAW_TITANIUM, 2)
+                        .unlockedBy(getHasName(ModBlocks.DEEPSLATE_BAUXITE_ORE), has(ModBlocks.DEEPSLATE_BAUXITE_ORE))
+                        .save(output, "nohonor:bauxite_deepslate_block_melting_from_arc_process");
+
+                ArcCrucibleRecipeBuilder.arcProcessRecipe(RecipeCategory.MISC, Ingredient.of(ModItems.GALENA), ModItems.RAW_PEARL_SILVER, 2)
+                        .unlockedBy(getHasName(ModItems.GALENA), has(ModItems.GALENA))
+                        .save(output, "nohonor:galena_item_melting_from_arc_process");
+
+                ArcCrucibleRecipeBuilder.arcProcessRecipe(RecipeCategory.MISC, Ingredient.of(ModBlocks.GALENA_ORE), ModItems.RAW_PEARL_SILVER, 2)
+                        .unlockedBy(getHasName(ModBlocks.GALENA_ORE), has(ModBlocks.GALENA_ORE))
+                        .save(output, "nohonor:galena_block_melting_from_arc_process");
+
+                ArcCrucibleRecipeBuilder.arcProcessRecipe(RecipeCategory.MISC, Ingredient.of(ModBlocks.DEEPSLATE_GALENA_ORE), ModItems.RAW_PEARL_SILVER, 2)
+                        .unlockedBy(getHasName(ModBlocks.DEEPSLATE_GALENA_ORE), has(ModBlocks.DEEPSLATE_GALENA_ORE))
+                        .save(output, "nohonor:galena_deepslate_block_melting_from_arc_process");
+
+                ArcCrucibleRecipeBuilder.arcProcessRecipe(RecipeCategory.MISC, Ingredient.of(ModItems.SPODUMENE), ModItems.RAW_LYUTYY, 2)
+                        .unlockedBy(getHasName(ModItems.SPODUMENE), has(ModItems.SPODUMENE))
+                        .save(output, "nohonor:spodumene_item_melting_from_arc_process");
+
+                ArcCrucibleRecipeBuilder.arcProcessRecipe(RecipeCategory.MISC, Ingredient.of(ModBlocks.SPODUMENE_ORE), ModItems.RAW_LYUTYY, 2)
+                        .unlockedBy(getHasName(ModBlocks.SPODUMENE_ORE), has(ModBlocks.SPODUMENE_ORE))
+                        .save(output, "nohonor:spodumene_block_melting_from_arc_process");
+
+                ArcCrucibleRecipeBuilder.arcProcessRecipe(RecipeCategory.MISC, Ingredient.of(ModBlocks.DEEPSLATE_SPODUMENE_ORE), ModItems.RAW_LYUTYY, 2)
+                        .unlockedBy(getHasName(ModBlocks.DEEPSLATE_SPODUMENE_ORE), has(ModBlocks.DEEPSLATE_SPODUMENE_ORE))
+                        .save(output, "nohonor:spodumene_deepslate_block_melting_from_arc_process");
+
+                ArcCrucibleRecipeBuilder.arcProcessRecipe(RecipeCategory.MISC, Ingredient.of(ModItems.CROCOITE), ModItems.RAW_CHROMIUM, 2)
+                        .unlockedBy(getHasName(ModItems.CROCOITE), has(ModItems.CROCOITE))
+                        .save(output, "nohonor:crocoite_item_melting_from_arc_process");
+
+                ArcCrucibleRecipeBuilder.arcProcessRecipe(RecipeCategory.MISC, Ingredient.of(ModBlocks.END_STONE_CROCOITE_ORE), ModItems.RAW_CHROMIUM, 2)
+                        .unlockedBy(getHasName(ModBlocks.END_STONE_CROCOITE_ORE), has(ModBlocks.END_STONE_CROCOITE_ORE))
+                        .save(output, "nohonor:crocoite_block_melting_from_arc_process");
 
             }
 

@@ -13,7 +13,7 @@ public class ArcCrucibleScreen extends AbstractContainerScreen<ArcCrucibleMenu> 
     private static final Identifier GUI_TEXTURE =
             Identifier.fromNamespaceAndPath(NOHONOR.MOD_ID,"textures/gui/arc_crucible/arc_crucible_gui.png");
     private static final Identifier ARROW_TEXTURE =
-            Identifier.fromNamespaceAndPath(NOHONOR.MOD_ID,"textures/gui/arc_crucible/arrow_progress.png");
+            Identifier.fromNamespaceAndPath(NOHONOR.MOD_ID,"textures/gui/arc_crucible/arc_crucible_arrow_progress.png");
     //private static final Identifier CRYSTAL_TEXTURE =
     //        Identifier.parse("textures/block/amethyst_cluster.png");
 
@@ -37,7 +37,7 @@ public class ArcCrucibleScreen extends AbstractContainerScreen<ArcCrucibleMenu> 
     private void renderProgressArrow(GuiGraphicsExtractor guiGraphics, int x, int y) {
         if(menu.isCrafting()) {
             guiGraphics.blit(RenderPipelines.GUI_TEXTURED, ARROW_TEXTURE,
-                    x + 73, y + 35,
+                    x + 73, y + 33,
                     0, 0,
                     menu.getScaledArrowProgress(), 16,
                     65, 17);
